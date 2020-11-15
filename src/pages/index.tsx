@@ -46,10 +46,10 @@ const HeroSection = () => {
         alignSelf={["none", "center"]}
       >
         <Heading as="h1" size="2xl" paddingBottom={11}>
-        👋 Halo, Warga Tiga 2021!
+        Warga Tiga 2021
         </Heading>
         <Text fontSize="xl">
-          Di situs ini kalian bisa mengakses berbagai informasi mengenai angkatan kita, mulai dari booklet, turbud, dan kegiatan lainnya serta menjadi platform pengumpulan data.
+        👋 Halo, Warga Tiga 21! Di situs ini kalian bisa mengakses berbagai informasi mengenai angkatan kita, mulai dari booklet, turbud, dan kegiatan lainnya serta menjadi platform pengumpulan data.
         </Text>
       </Box>
     </MotionFlex>
