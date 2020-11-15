@@ -1,4 +1,4 @@
-import { Box, Text, PseudoBox, Flex } from "@chakra-ui/core";
+import { Box, Text, Flex, useColorMode } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -8,17 +8,18 @@ type CardProps = {
   handleClick?: () => void;
 };
 
-const MotionCard = motion.custom(PseudoBox);
+const MotionCard = motion.custom(Box);
 
 const Card = ({ title, img, handleClick }: CardProps) => {
+  const { colorMode } = useColorMode();
+
   return (
     <MotionCard
       //chakra props
-      as="button"
       display="flex"
       width={["100%", "47%"]}
       height={120}
-      backgroundColor="teal.700"
+      backgroundColor={colorMode === "light" ? "gray.200" : "teal.700"}
       boxShadow="0px 0px 32px 2px rgba(38, 46, 51, 0.1);"
       alignItems="center"
       borderRadius={20}
@@ -26,8 +27,8 @@ const Card = ({ title, img, handleClick }: CardProps) => {
       _even={{ marginLeft: [0, "5%"] }}
       marginBottom={"5%"}
       onClick={handleClick}
-      whileHover={{ scale: 1.05 }}
       //motion API
+      whileHover={{ scale: 1.05 }}
       variants={{
         before: {
           opacity: 0,

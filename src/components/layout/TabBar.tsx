@@ -1,4 +1,4 @@
-import { Flex, Box } from "@chakra-ui/core";
+import { Flex, Box, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,16 +12,18 @@ import {
 const MotionFlex = motion.custom(Flex);
 
 const TabBar = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <MotionFlex
-      marginX={["5vw", "3vw", "2vw", 0]}
+      marginX={["5%", "3%", "2%", 0]}
       position="fixed"
-      width={["90vw", "92vw", "82vw", 800]}
-      height={[96, 128]}
+      width={["90%", "94%", "82%", 800]}
+      height={["6rem", "8rem"]}
       bottom={22}
       borderRadius={20}
       boxShadow="0px 0px 32px 2px rgba(38, 46, 51, 0.4)"
-      backgroundColor="teal.600"
+      backgroundColor={colorMode === "light" ? "gray.100" : "teal.600"}
       padding={22}
       textAlign="center"
       alignItems="center"
