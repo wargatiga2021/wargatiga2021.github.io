@@ -3,7 +3,7 @@ import Head from "next/head";
 const Meta = () => {
   return (
     <Head>
-      <title>Hello | Warga Tiga 2021</title>
+      <title>Home | Warga Tiga 2021</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"

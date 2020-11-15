@@ -8,6 +8,7 @@ import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
 
 import { getSortedProjectsData } from "../helpers/projects";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Home = ({ allProjectsData }) => {
   return (
@@ -49,13 +50,14 @@ const HeroSection = () => {
         Warga Tiga 2021
         </Heading>
         <Text fontSize="xl">
-        👋 Halo, Warga Tiga 21! Di situs ini kalian bisa mengakses berbagai informasi mengenai angkatan kita, mulai dari booklet, turbud, dan kegiatan lainnya serta menjadi platform pengumpulan data.
+        👋 Halo, Warga Tiga 21! Di situs ini kalian bisa mengakses berbagai informasi, pengumuman, dan mengisi data.
         </Text>
       </Box>
     </MotionFlex>
   );
 };
 
+// PROJECTS
 const ProjectsSection = ({ data }) => {
   const router = useRouter();
   const { colorMode } = useColorMode();
@@ -77,7 +79,7 @@ const ProjectsSection = ({ data }) => {
               📅 Projects and Events
             </Heading>
           </Link>
-          <Text>Di bawah tercantum beberapa project dan kegiatan Warga Tiga 2021.</Text>
+          <Text>Di bawah ini tercantum beberapa project dan kegiatan Warga Tiga 2021.</Text>
         </Box>
         <MotionFlex
           wrap="wrap"
@@ -118,6 +120,54 @@ const ProjectsSection = ({ data }) => {
             lihat selengkapnya
           </Button>
         </Link>
+      </Box>
+    </Box>
+  );
+};
+
+// SOCIAL MEDIA
+const ProjectsSection = ({ data }) => {
+  // const router = useRouter();
+  const { colorMode } = useColorMode();
+
+  // useEffect(() => {
+  //   data
+  //     .filter((project) => project.highlight && project)
+  //     .map(({ id }) => {
+  //       router.prefetch("/projects/[id]", `/projects/${id}`);
+  //     });
+  // });
+
+  return (
+    <Box as="section" paddingY={22}>
+      <Box>
+        <Box>
+          <Link href="/projects">
+            <Heading as="h1" size="2xl" cursor="pointer">
+              📱 Find Us On
+            </Heading>
+          </Link>
+          <Text>Media sosial 3'2021.</Text>
+        </Box>
+        <MotionFlex
+          wrap="wrap"
+          marginTop={22}
+          variants={{
+            before: {},
+            after: { transition: { staggerChildren: 0.06 } },
+          }}
+          initial="before"
+          animate="after"
+        >
+          <Link href="https://www.youtube.com/watch?v=QFHrl6UgeMk">
+            <Card
+              title={'RBL Documenter Video'}
+              img={
+                <FontAwesomeIcon icon={faYoutube} style={{ cursor: "pointer" }} />
+              }
+            />
+          </Link>
+        </MotionFlex>
       </Box>
     </Box>
   );
