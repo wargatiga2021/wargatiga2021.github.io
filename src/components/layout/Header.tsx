@@ -10,7 +10,7 @@ const Header = () => {
     <Flex as="header" {...responsiveWidthProps}>
       <Link href="/" passHref>
         <Text as="a" cursor="pointer" fontSize="3xl">
-          sznm.dev
+          Warga Tiga 2021
         </Text>
       </Link>
       <Box marginLeft="auto">
