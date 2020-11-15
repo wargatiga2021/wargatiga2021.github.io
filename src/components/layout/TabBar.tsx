@@ -8,6 +8,8 @@ import {
   faUser,
   faFeatherAlt,
   faAlignRight,
+  faRoute,
+  faBook,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MotionFlex = motion.custom(Flex);
