@@ -16,14 +16,14 @@ const Projects = ({ allProjectsData }: ProjectsProps) => {
   return (
     <Box>
       <Head>
-        <title>Projects | sozonome</title>
+        <title>Booklet | sozonome</title>
       </Head>
       <Box marginBottom={22}>
         <Heading as="h1" size="2xl">
-          Projects
+          📔 Booklet 
         </Heading>
         <Heading as="p" size="lg" fontWeight="normal">
-          Some projects I worked on previously.
+          Halaman ini berisi informasi terkait dengan pembuatan booklet atau buku tahunan 
         </Heading>
       </Box>
       <MotionBox
