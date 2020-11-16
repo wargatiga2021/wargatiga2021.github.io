@@ -50,8 +50,8 @@ const Booklet = () => {
                 Timeline Booklet 🕘
             </Heading>
             
-              <Box marginY={22}>
-              <Heading as="h3">
+              <Box marginY={10}>
+              <Heading as="h3" size="md">
                 ‣ November - Desember
               </Heading>
               <Text>
@@ -68,7 +68,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3">
+              <Heading as="h3" size="md">
                 Januari
               </Heading>
               <Text>
@@ -85,7 +85,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3">
+              <Heading as="h3" size="md">
                 Februari
               </Heading>
               <Text>
@@ -93,7 +93,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3">
+              <Heading as="h3" size="md">
                 Maret
               </Heading>
               <Text>
