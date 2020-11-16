@@ -50,7 +50,7 @@ const Booklet = () => {
                 Timeline Booklet 🕘
             </Heading>
             
-              <Box marginY={10}>
+              <Box marginY={30}>
               <Heading as="h3" size="md">
                 ‣ November - Desember
               </Heading>
@@ -67,7 +67,7 @@ const Booklet = () => {
                 4. Proses input data dan layout design oleh tim Nawa
               </Text>
             </Box>
-            <Box marginY={22}>
+            <Box marginY={30}>
               <Heading as="h3" size="md">
                 Januari
               </Heading>
@@ -84,7 +84,7 @@ const Booklet = () => {
                 4. Revisi yang dilakukan oleh panitia.
               </Text>
             </Box>
-            <Box marginY={22}>
+            <Box marginY={30}>
               <Heading as="h3" size="md">
                 Februari
               </Heading>
@@ -92,7 +92,7 @@ const Booklet = () => {
                 1. Persiapan produksi dan produksi booklet.
               </Text>
             </Box>
-            <Box marginY={22}>
+            <Box marginY={30}>
               <Heading as="h3" size="md">
                 Maret
               </Heading>
