@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
-import Link from "next/link";
 
 const Booklet = () => {
   return (
