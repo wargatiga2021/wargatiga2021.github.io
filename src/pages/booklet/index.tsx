@@ -105,7 +105,7 @@ const Booklet = () => {
             <Heading as="h2" size="lg">
                 Termin Pembayaran 💵
             </Heading>
-            <Text>
+            <Text fontWeight={1000}>
               9-30 November 110.000 
             </Text>
             <Text>
