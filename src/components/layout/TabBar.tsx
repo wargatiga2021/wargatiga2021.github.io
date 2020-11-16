@@ -10,6 +10,7 @@ import {
   faAlignRight,
   faRoute,
   faBook,
+  faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MotionFlex = motion.custom(Flex);
@@ -56,7 +57,7 @@ const TabBar = () => {
       </Link>
       <Link href="/blog" passHref>
         <Box as="a" flexBasis={"25%"}>
-          <FontAwesomeIcon icon={faAlignRight} style={{ cursor: "pointer" }} />
+          <FontAwesomeIcon icon={faBullhorn} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
     </MotionFlex>
