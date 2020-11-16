@@ -125,7 +125,7 @@ const Booklet = () => {
             </Text>
             <Box marginY={5}>
               <Link
-                href="https://bit.ly/FormBiodata321"
+                href="https://forms.gle/4wojrjeo35iJGth16"
                 rel="noopener noreferrer"
                 marginRight={11}
                 isExternal
