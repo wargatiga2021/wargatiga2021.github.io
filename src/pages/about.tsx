@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Box>
       <Head>
-        <title>About | sozonome</title>
+        <title>About | Warga Tiga 2021</title>
       </Head>
       <HeadSection />
       <AboutContent />
