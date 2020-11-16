@@ -1,13 +1,7 @@
-import { useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Box, Heading, Text, Button, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
-import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
-
-import { getSortedProjectsData } from "../helpers/projects";
 
 const Home = ({ allProjectsData }) => {
   return (
