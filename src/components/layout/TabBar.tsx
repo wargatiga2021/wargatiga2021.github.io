@@ -7,6 +7,9 @@ import {
   faRocket,
   faUser,
   faFeatherAlt,
+  faBook,
+  faRoute,
+  faBullhorn,
 } from "@fortawesome/free-solid-svg-icons";
 
 const MotionFlex = motion.custom(Flex);
@@ -41,19 +44,19 @@ const TabBar = () => {
           <FontAwesomeIcon icon={faHome} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
-      <Link href="/projects" passHref>
+      <Link href="/booklet" passHref>
         <Box as="a" flexBasis={"25%"}>
-          <FontAwesomeIcon icon={faRocket} style={{ cursor: "pointer" }} />
+          <FontAwesomeIcon icon={faBook} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
       <Link href="/blog" passHref>
         <Box as="a" flexBasis={"25%"}>
-          <FontAwesomeIcon icon={faFeatherAlt} style={{ cursor: "pointer" }} />
+          <FontAwesomeIcon icon={faRoute} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
       <Link href="/about" passHref>
         <Box as="a" flexBasis={"25%"}>
-          <FontAwesomeIcon icon={faUser} style={{ cursor: "pointer" }} />
+          <FontAwesomeIcon icon={faBullhorn} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
     </MotionFlex>
