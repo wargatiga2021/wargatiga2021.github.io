@@ -3,11 +3,11 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
+import Head from "next/head";
 
 const Booklet = () => {
   return (
     <>
-    <Box>
       <Head>
         <title>Booklet | Warga Tiga 2021</title>
       </Head>
@@ -88,7 +88,6 @@ const Booklet = () => {
                 <Button>📑 Form Biodata</Button>
               </Link>
           </Box>
-        </Box>
     </>
   );
 };
