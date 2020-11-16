@@ -90,20 +90,26 @@ const ProjectsSection = ({ data }) => {
           initial="before"
           animate="after"
         >
-          {data
+          {/* {data
             .filter((project) => project.highlight && project)
             .map(({ id, title, thumbnail }, index) => {
               return (
                 <Card
                   title={title}
                   handleClick={() =>
-                    router.push("/[id]", `/projects/${id}`)
+                    router.push("/projects/[id]", `/projects/${id}`)
                   }
                   img={thumbnail}
                   key={index}
                 />
               );
-            })}
+            })} */}
+          <Link href="/booklet">
+            <Card
+              title = "Booklet"
+              img = "/app_icons/desbook-pwa.png"
+            />
+          </Link>
         </MotionFlex>
         <Link href="/projects">
           <Button
