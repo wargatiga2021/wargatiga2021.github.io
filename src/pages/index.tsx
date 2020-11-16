@@ -127,52 +127,52 @@ const ProjectsSection = ({ data }) => {
 };
 
 // SOCIAL MEDIA
-const SocialSection = ({ data }) => {
-  // const router = useRouter();
-  const { colorMode } = useColorMode();
+// const SocialSection = ({ data }) => {
+//   // const router = useRouter();
+//   const { colorMode } = useColorMode();
 
-  // useEffect(() => {
-  //   data
-  //     .filter((project) => project.highlight && project)
-  //     .map(({ id }) => {
-  //       router.prefetch("/projects/[id]", `/projects/${id}`);
-  //     });
-  // });
+//   // useEffect(() => {
+//   //   data
+//   //     .filter((project) => project.highlight && project)
+//   //     .map(({ id }) => {
+//   //       router.prefetch("/projects/[id]", `/projects/${id}`);
+//   //     });
+//   // });
 
-  return (
-    <Box as="section" paddingY={22}>
-      <Box>
-        <Box>
-          <Link href="/projects">
-            <Heading as="h1" size="2xl" cursor="pointer">
-              📱 Find Us On
-            </Heading>
-          </Link>
-          <Text>Media sosial 3'2021.</Text>
-        </Box>
-        <MotionFlex
-          wrap="wrap"
-          marginTop={22}
-          variants={{
-            before: {},
-            after: { transition: { staggerChildren: 0.06 } },
-          }}
-          initial="before"
-          animate="after"
-        >
-          <Link href="https://www.youtube.com/watch?v=QFHrl6UgeMk">
-            <Card
-              title={'RBL Documenter Video'}
-              img={
-                <FontAwesomeIcon icon={faYoutube} style={{ cursor: "pointer" }} />
-              }
-            />
-          </Link>
-        </MotionFlex>
-      </Box>
-    </Box>
-  );
-};
+//   return (
+//     <Box as="section" paddingY={22}>
+//       <Box>
+//         <Box>
+//           <Link href="/projects">
+//             <Heading as="h1" size="2xl" cursor="pointer">
+//               📱 Find Us On
+//             </Heading>
+//           </Link>
+//           <Text>Media sosial 3'2021.</Text>
+//         </Box>
+//         <MotionFlex
+//           wrap="wrap"
+//           marginTop={22}
+//           variants={{
+//             before: {},
+//             after: { transition: { staggerChildren: 0.06 } },
+//           }}
+//           initial="before"
+//           animate="after"
+//         >
+//           <Link href="https://www.youtube.com/watch?v=QFHrl6UgeMk">
+//             <Card
+//               title={'RBL Documenter Video'}
+//               img={
+//                 <FontAwesomeIcon icon={faYoutube} style={{ cursor: "pointer" }} />
+//               }
+//             />
+//           </Link>
+//         </MotionFlex>
+//       </Box>
+//     </Box>
+//   );
+// };
 
 export const getStaticProps = async () => {
   const allProjectsData = getSortedProjectsData();
