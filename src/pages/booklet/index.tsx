@@ -123,6 +123,7 @@ const Booklet = () => {
               Pastikan data yang kalian masukkan benar karena setiap data yang diinput
               krusial dan memakan waktu yang lama untuk revisi kembali.
             </Text>
+            <Box marginY={5}>
               <Link
                 href="https://bit.ly/FormBiodata321"
                 rel="noopener noreferrer"
@@ -137,8 +138,9 @@ const Booklet = () => {
                 marginRight={11}
                 isExternal
               > */}
-                <Button>🕗 Coming Soon</Button>
+                <Button marginY={3}>🕗 Coming Soon</Button>
               {/* </Link> */}
+              </Box>
           </Box>
     </>
   );
