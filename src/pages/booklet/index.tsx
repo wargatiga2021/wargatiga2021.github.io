@@ -47,32 +47,72 @@ const Booklet = () => {
       </MotionFlex>
           <Box marginY={22}>
             <Heading as="h2" size="lg">
-                Timeline Booklet
+                Timeline Booklet 🕘
             </Heading>
-            <Heading as="h3" size="lg">
-              November - Desember
-            </Heading>
-            <Text>
-              1. Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.
-            </Text>
-            <Text>
-            2. Pengumpulan data setiap anak untuk dicantumkan di dalam booklet.
-            </Text>
-            <Text>
-            3. Setiap kelas berdikusi mengenai tema, outfit, dan hal lainnya.
-            </Text>
-            <Text>
-            4. Proses input data dan layout design oleh tim Nawa
-            </Text>
             
-          
+              <Box marginY={22}>
+              <Heading as="h3" size="lg">
+                November - Desember
+              </Heading>
+              <Text>
+                1. Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.
+              </Text>
+              <Text>
+                2. Pengumpulan data setiap anak untuk dicantumkan di dalam booklet.
+              </Text>
+              <Text>
+                3. Setiap kelas berdikusi mengenai tema, outfit, dan hal lainnya.
+              </Text>
+              <Text>
+                4. Proses input data dan layout design oleh tim Nawa
+              </Text>
+            </Box>
+            <Box marginY={22}>
+              <Heading as="h3" size="lg">
+                Januari
+              </Heading>
+              <Text>
+                1. Pelaksanaan sesi foto.
+              </Text>
+              <Text>
+                2. Pengolahan foto oleh tim Nawa.
+              </Text>
+              <Text>
+                3. Input foto ke layout.
+              </Text>
+              <Text>
+                4. Revisi yang dilakukan oleh panitia.
+              </Text>
+            </Box>
+            <Box marginY={22}>
+              <Heading as="h3" size="lg">
+                Februari
+              </Heading>
+              <Text>
+                1. Persiapan produksi dan produksi booklet.
+              </Text>
+            </Box>
+            <Box marginY={22}>
+              <Heading as="h3" size="lg">
+                Maret
+              </Heading>
+              <Text>
+                1. Pengiriman booklet kepada setiap anak dan garansi jika ada kerusakan.
+              </Text>
+            </Box>
           </Box>
           <Box marginY={22}>
             <Heading as="h2" size="lg">
-                Termin Pembayaran
+                Termin Pembayaran 💵
             </Heading>
             <Text>
-              Termin pembayaran booklet akan segera ditambahkan 
+              9-30 November 110.000 
+            </Text>
+            <Text>
+              1-31 Desember 100.000 
+            </Text>
+            <Text>
+              1-22 Januari 100.000
             </Text>
           </Box>
           <Box marginY={22}>
