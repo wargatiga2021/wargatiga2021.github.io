@@ -36,7 +36,7 @@ const HeroSection = () => {
           height={160}
           className="glow"
           src="/avatar.png"
-          alt="sozonome"
+          alt="Warga Tiga 2021"
         />
       </Box>
       <Box
@@ -46,10 +46,11 @@ const HeroSection = () => {
         alignSelf={["none", "center"]}
       >
         <Heading as="h1" size="2xl" paddingBottom={11}>
-          Hello! I'm Nathan,
+          Halo! Warga Tiga 2021,
         </Heading>
         <Text fontSize="xl">
-          Digital crafter specializing in Frontend and Mobile development.
+          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
+          kalian bisa akses banyak informasi di sini.
         </Text>
       </Box>
     </MotionFlex>
@@ -74,10 +75,10 @@ const ProjectsSection = ({ data }) => {
         <Box>
           <Link href="/projects">
             <Heading as="h1" size="2xl" cursor="pointer">
-              Projects
+              📅 Projects and Events
             </Heading>
           </Link>
-          <Text>Some notable projects I've worked on previously.</Text>
+          <Text>Di bawah tercantum kegiatan dan project yang akan kita laksanakan.</Text>
         </Box>
         <MotionFlex
           wrap="wrap"
@@ -115,7 +116,7 @@ const ProjectsSection = ({ data }) => {
               color: "black",
             }}
           >
-            see more
+            lihat selengkapnya
           </Button>
         </Link>
       </Box>
