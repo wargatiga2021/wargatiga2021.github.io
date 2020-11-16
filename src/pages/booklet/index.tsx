@@ -4,11 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
 
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-import * as am4core from "amcharts/amcharts4/core";
-import * as am4charts from "amcharts/amcharts4/charts";
-
 const Booklet = () => {
   return (
     <>
@@ -53,10 +48,22 @@ const Booklet = () => {
           <Heading as="h2" size="lg">
               Timeline Booklet
           </Heading>
+          <Heading as="h3" size="lg">
+            November - Desember
+          </Heading>
           <Text>
-            Timeline pengerjaan booklet akan segera ditambahkan agar kamu tau sudah sejauh mana
-            pembuatan booklet ini.
+            1. Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.
           </Text>
+          <Text>
+          2. Pengumpulan data setiap anak untuk dicantumkan di dalam booklet.
+          </Text>
+          <Text>
+          3. Setiap kelas berdikusi mengenai tema, outfit, dan hal lainnya.
+          </Text>
+          <Text>
+          4. Proses input data dan layout design oleh tim Nawa
+          </Text>
+          
         
         </Box>
         <Box marginY={22}>
