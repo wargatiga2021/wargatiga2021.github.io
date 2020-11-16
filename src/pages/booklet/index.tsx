@@ -46,7 +46,7 @@ const Booklet = () => {
         </Box>
       </MotionFlex>
           <Box marginY={22}>
-            <Heading as="h2" size="lg">
+            <Heading as="h1">
                 Timeline Booklet 🕘
             </Heading>
             
@@ -102,7 +102,7 @@ const Booklet = () => {
             </Box>
           </Box>
           <Box marginY={22}>
-            <Heading as="h2" size="lg">
+            <Heading as="h1">
                 Termin Pembayaran 💵
             </Heading>
             <Text fontWeight={500}>
@@ -117,7 +117,7 @@ const Booklet = () => {
           </Box>
           <Box marginY={22}>
             <Heading as="h2" size="lg">
-                Pengisian Data
+                Pengisian Data 📑
             </Heading>
             <Text>
               Pastikan data yang kalian masukkan benar karena setiap data yang diinput
@@ -129,7 +129,7 @@ const Booklet = () => {
                 marginRight={11}
                 isExternal
               >
-                <Button>📑 Form Biodata</Button>
+                <Button>🧑 Form Biodata</Button>
               </Link>
           </Box>
     </>
