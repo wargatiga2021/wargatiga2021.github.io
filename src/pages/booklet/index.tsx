@@ -119,6 +119,10 @@ const Booklet = () => {
             <Heading as="h2" size="lg">
                 Pengisian Data
             </Heading>
+            <Text>
+              Pastikan data yang kalian masukkan benar karena setiap data yang diinput
+              krusial dan memakan waktu yang lama untuk revisi kembali.
+            </Text>
               <Link
                 href="https://bit.ly/FormBiodata321"
                 rel="noopener noreferrer"
