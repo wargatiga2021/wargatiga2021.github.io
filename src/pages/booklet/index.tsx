@@ -106,13 +106,13 @@ const Booklet = () => {
                 Termin Pembayaran 💵
             </Heading>
             <Text fontWeight={500}>
-              ‣ 9-30 November 110.000
+              ‣ 9-30 November 100.000
             </Text>
             <Text>
               1-31 Desember 100.000 
             </Text>
             <Text>
-              1-22 Januari 100.000
+              1-22 Januari 110.000
             </Text>
           </Box>
           <Box marginY={22}>
