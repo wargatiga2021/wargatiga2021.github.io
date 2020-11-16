@@ -97,7 +97,7 @@ const ProjectsSection = ({ data }) => {
                 <Card
                   title={title}
                   handleClick={() =>
-                    router.push("/projects/[id]", `/${id}`)
+                    router.push("/[id]", `/projects/${id}`)
                   }
                   img={thumbnail}
                   key={index}
