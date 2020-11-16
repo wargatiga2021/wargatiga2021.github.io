@@ -1,4 +1,4 @@
-import { Box, Link, Text } from "@chakra-ui/core";
+import { Box, Link, Text } from "@chakra-ui/react";
 
 import { responsiveWidthProps } from "../../styles/customTheme";
 
@@ -8,11 +8,11 @@ const Footer = () => {
       <Text fontSize="sm">
         2020 -{" "}
         <Link
-          href="https://agustinusnathaniel.com"
+          href="https://link.osissman3bdg.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          AgustinusNathaniel
+          Warga Tiga 2021
         </Link>
       </Text>
     </Box>

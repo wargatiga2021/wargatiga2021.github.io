@@ -1,4 +1,4 @@
-import { Heading, Box } from "@chakra-ui/core";
+import { Heading, Box } from "@chakra-ui/react";
 import Head from "next/head";
 
 import ProjectDetailWrapper from "../../components/projects/ProjectDetailWrapper";
@@ -16,14 +16,14 @@ const Projects = ({ allProjectsData }: ProjectsProps) => {
   return (
     <Box>
       <Head>
-        <title>Booklet | sozonome</title>
+        <title>Projects | Warga Tiga 2021</title>
       </Head>
       <Box marginBottom={22}>
         <Heading as="h1" size="2xl">
-          📔 Booklet 
+          📅 Projects and Event
         </Heading>
-        <Heading as="p" size="lg" fontWeight="normal">
-          Halaman ini berisi informasi terkait dengan pembuatan booklet atau buku tahunan 
+        <Heading as="p" size="md" fontWeight="normal">
+        Di bawah tercantum kegiatan dan project yang akan kita laksanakan.
         </Heading>
       </Box>
       <MotionBox

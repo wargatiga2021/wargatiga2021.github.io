@@ -3,11 +3,11 @@ import Head from "next/head";
 const Meta = () => {
   return (
     <Head>
-      <title>Hello | sozonome</title>
+      <title>Halo | Warga Tiga 2021</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
         name="description"
-        content="Agustinus Nathaniel's Dev Site | sozonome"
+        content="Warga Tiga 2021's website."
       />
       <link
         rel="alternate"

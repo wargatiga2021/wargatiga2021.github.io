@@ -1,17 +1,22 @@
 import Link from "next/link";
-import { Box, Text } from "@chakra-ui/core";
+import { Box, Flex, Text } from "@chakra-ui/react";
+
+import ThemeToggle from "./ThemeToggle";
 
 import { responsiveWidthProps } from "../../styles/customTheme";
 
 const Header = () => {
   return (
-    <Box as="header" {...responsiveWidthProps}>
+    <Flex as="header" {...responsiveWidthProps}>
       <Link href="/" passHref>
         <Text as="a" cursor="pointer" fontSize="3xl">
-          sznm.dev
+          Warga Tiga 2021
         </Text>
       </Link>
-    </Box>
+      <Box marginLeft="auto">
+        <ThemeToggle />
+      </Box>
+    </Flex>
   );
 };
 

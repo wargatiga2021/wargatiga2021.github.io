@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Box, Heading, Text, Button } from "@chakra-ui/core";
+import { Box, Heading, Text, Button, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
 
 import Card from "../components/Card";
@@ -21,7 +21,7 @@ const Home = ({ allProjectsData }) => {
 const HeroSection = () => {
   return (
     <MotionFlex
-      marginY={44}
+      marginY={"2.75rem"}
       as="section"
       variants={{
         before: { opacity: 0, y: 20, transition: { type: "spring" } },
@@ -30,13 +30,13 @@ const HeroSection = () => {
       initial="before"
       animate="after"
     >
-      <Box size={[100, 160]}>
+      <Box boxSize={[100, 160]}>
         <Image
           width={160}
           height={160}
           className="glow"
-          src="/avataaars.svg"
-          alt="sozonome"
+          src="/avatar.png"
+          alt="Warga Tiga 2021"
         />
       </Box>
       <Box
@@ -46,10 +46,11 @@ const HeroSection = () => {
         alignSelf={["none", "center"]}
       >
         <Heading as="h1" size="2xl" paddingBottom={11}>
-          Hello! I'm Nathan,
+          Halo! Warga Tiga 2021,
         </Heading>
         <Text fontSize="xl">
-          Digital crafter specializing in Frontend and Mobile development.
+          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
+          kalian bisa akses banyak informasi di sini.
         </Text>
       </Box>
     </MotionFlex>
@@ -58,6 +59,8 @@ const HeroSection = () => {
 
 const ProjectsSection = ({ data }) => {
   const router = useRouter();
+  const { colorMode } = useColorMode();
+
   useEffect(() => {
     data
       .filter((project) => project.highlight && project)
@@ -65,16 +68,17 @@ const ProjectsSection = ({ data }) => {
         router.prefetch("/projects/[id]", `/projects/${id}`);
       });
   });
+
   return (
     <Box as="section" paddingY={22}>
       <Box>
         <Box>
           <Link href="/projects">
             <Heading as="h1" size="2xl" cursor="pointer">
-              Projects
+              Projects and Events
             </Heading>
           </Link>
-          <Text>Some notable projects I've worked on previously.</Text>
+          <Text>Di bawah tercantum kegiatan dan project yang akan kita laksanakan.</Text>
         </Box>
         <MotionFlex
           wrap="wrap"
@@ -86,7 +90,8 @@ const ProjectsSection = ({ data }) => {
           initial="before"
           animate="after"
         >
-          {data
+
+          {/* {data
             .filter((project) => project.highlight && project)
             .map(({ id, title, thumbnail }, index) => {
               return (
@@ -99,17 +104,44 @@ const ProjectsSection = ({ data }) => {
                   key={index}
                 />
               );
-            })}
+            })} */}
+
+          <Card
+            title = "Booklet"
+            img = "/app_icons/desbook-pwa.png"
+            handleClick = {() =>
+              router.push("/booklet")
+            }
+          />
+          <Card
+            title = "Turbud"
+            img = "/app_icons/icon_advicegen.png"
+            handleClick = {() =>
+              router.push("/turbud")
+            }
+          />
+          <Card
+            title = "Coming Soon"
+            img = "/app_icons/add-to-calendar-generator.svg"
+          />
+          <Card
+            title = "Corona kapan beres hmm"
+            img = "/app_icons/icon-covid-19-data.png"
+          />
+
         </MotionFlex>
         <Link href="/projects">
           <Button
             width="100%"
             borderRadius={20}
             height={55}
-            backgroundColor="teal.700"
-            _hover={{ backgroundColor: "teal.300", color: "black" }}
+            backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
+            _hover={{
+              backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
+              color: "black",
+            }}
           >
-            see more
+            lihat selengkapnya
           </Button>
         </Link>
       </Box>

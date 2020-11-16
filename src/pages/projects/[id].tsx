@@ -1,6 +1,7 @@
-import { Box, Button } from "@chakra-ui/core";
+import { Box, Button } from "@chakra-ui/react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import ProjectDetailWrapper from "../../components/projects/ProjectDetailWrapper";
 
@@ -18,11 +19,11 @@ const Project = ({ projectData }: ProjectProps) => {
   return (
     <Box>
       <Head>
-        <title>{projectData.title} | sozonome</title>
+        <title>{projectData.title} | Warga Tiga 2021</title>
       </Head>
       <Box as="article">
         <Button
-          leftIcon="arrow-back"
+          leftIcon={<AiOutlineArrowLeft />}
           size="sm"
           backgroundColor="teal.600"
           marginBottom={22}
