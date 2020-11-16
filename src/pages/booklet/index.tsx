@@ -116,7 +116,7 @@ const Booklet = () => {
             </Text>
           </Box>
           <Box marginY={22}>
-            <Heading as="h2" size="lg">
+            <Heading as="h1">
                 Pengisian Data 📑
             </Heading>
             <Text>
