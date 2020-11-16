@@ -43,7 +43,6 @@ const AboutContent = () => {
       initial="before"
       animate="after"
     >
-      <Heading>👋 Hi, how are you?</Heading>
       <Text {...textProps}>
           Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
           kalian bisa akses informasi tentang timeline/progress, termin pembayaran, 
@@ -120,7 +119,7 @@ const Links = () => {
 
   return (
     <MotionBox marginY={4} {...wrapperAnimationProps}>
-      <Text fontStyle="italic">1.01 ^365 = 37.7</Text>
+      <Text fontStyle="italic">Our Social Media</Text>
       <MotionFlex fontSize="4xl" {...staggerAnimationProps}>
         <MotionLinks
           link={`https://github.com/wargatiga2021`}

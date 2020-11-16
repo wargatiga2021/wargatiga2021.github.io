@@ -56,7 +56,7 @@ const TabBar = () => {
       </Link>
       <Link href="/about" passHref>
         <Box as="a" flexBasis={"25%"}>
-          <FontAwesomeIcon icon={faBullhorn} style={{ cursor: "pointer" }} />
+          <FontAwesomeIcon icon={faUser} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
     </MotionFlex>
