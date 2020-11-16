@@ -50,8 +50,8 @@ const Booklet = () => {
                 Timeline Booklet 🕘
             </Heading>
             
-              <Box marginY={30}>
-              <Heading as="h3" size="md">
+              <Box>
+              <Heading as="h2" size="md">
                 ‣ November - Desember
               </Heading>
               <Text>
@@ -67,8 +67,8 @@ const Booklet = () => {
                 4. Proses input data dan layout design oleh tim Nawa
               </Text>
             </Box>
-            <Box marginY={30}>
-              <Heading as="h3" size="md">
+            <Box>
+              <Heading as="h2" size="md">
                 Januari
               </Heading>
               <Text>
@@ -84,16 +84,16 @@ const Booklet = () => {
                 4. Revisi yang dilakukan oleh panitia.
               </Text>
             </Box>
-            <Box marginY={30}>
-              <Heading as="h3" size="md">
+            <Box>
+              <Heading as="h2" size="md">
                 Februari
               </Heading>
               <Text>
                 1. Persiapan produksi dan produksi booklet.
               </Text>
             </Box>
-            <Box marginY={30}>
-              <Heading as="h3" size="md">
+            <Box>
+              <Heading as="h2" size="md">
                 Maret
               </Heading>
               <Text>
@@ -120,7 +120,7 @@ const Booklet = () => {
                 Pengisian Data
             </Heading>
               <Link
-                href="/booklet/biodata"
+                href="https://bit.ly/FormBiodata321"
                 rel="noopener noreferrer"
                 marginRight={11}
                 isExternal
