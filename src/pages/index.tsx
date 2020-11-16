@@ -35,7 +35,7 @@ const HeroSection = () => {
           width={160}
           height={160}
           className="glow"
-          src="/avatars.png"
+          src="/avatar.png"
           alt="sozonome"
         />
       </Box>
