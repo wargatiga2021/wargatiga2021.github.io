@@ -51,8 +51,8 @@ const Booklet = () => {
             </Heading>
             
               <Box marginY={22}>
-              <Heading as="h3" size="lg">
-                November - Desember
+              <Heading as="h3">
+                ‣ November - Desember
               </Heading>
               <Text>
                 1. Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.
@@ -68,7 +68,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3" size="lg">
+              <Heading as="h3">
                 Januari
               </Heading>
               <Text>
@@ -85,7 +85,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3" size="lg">
+              <Heading as="h3">
                 Februari
               </Heading>
               <Text>
@@ -93,7 +93,7 @@ const Booklet = () => {
               </Text>
             </Box>
             <Box marginY={22}>
-              <Heading as="h3" size="lg">
+              <Heading as="h3">
                 Maret
               </Heading>
               <Text>
@@ -105,8 +105,8 @@ const Booklet = () => {
             <Heading as="h2" size="lg">
                 Termin Pembayaran 💵
             </Heading>
-            <Text fontWeight={1000}>
-              9-30 November 110.000 
+            <Text fontWeight={500}>
+              ‣ 9-30 November 110.000
             </Text>
             <Text>
               1-31 Desember 100.000 
