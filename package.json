@@ -1,9 +1,9 @@
 {
-  "name": "wargatiga21",
+  "name": "sznm.dev",
   "private": true,
-  "description": "Warga Tiga 2021 Website",
+  "description": "Agustinus Nathaniel's dev site",
   "version": "0.1.0",
-  "author": "wargatiga2021dev",
+  "author": "sozonome",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wargatiga2021/web"
+    "url": "https://github.com/sozonome/sznm.dev"
   },
   "bugs": {
-    "url": "https://github.com/wargatiga2021/web/issues"
+    "url": "https://github.com/sozonome/sznm.dev/issues"
   }
 }

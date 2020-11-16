@@ -8,11 +8,11 @@ const Footer = () => {
       <Text fontSize="sm">
         2020 -{" "}
         <Link
-          href="https://osissman3bdg.org"
+          href="https://agustinusnathaniel.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Warga Tiga 2021
+          AgustinusNathaniel
         </Link>
       </Text>
     </Box>

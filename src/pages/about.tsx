@@ -24,7 +24,7 @@ const About = () => {
 const HeadSection = () => {
   return (
     <Box marginBottom={8}>
-      <Heading>Warga Tiga 2021</Heading>
+      <Heading>sozonome</Heading>
     </Box>
   );
 };
@@ -43,12 +43,12 @@ const AboutContent = () => {
       initial="before"
       animate="after"
     >
+      <Heading>👋 Hi, how are you?</Heading>
       <Text {...textProps}>
-      👋 Halo, Warga Tiga 2021!
-      </Text>
-      <Text {...textProps}>
-      Silakan isi form di bawah ini yaa. Hati-hati isi formnya, pastiin semua data yang disubmit udah bener, 
-      gaada typo, ga ngadi-ngadi.
+        I'm currently working as a Frontend Engineer. Most of the time I work
+        with TypeScript and React. I make fun projects in my free time and share
+        it here. Whether to explore more around React and its frameworks
+        (Gatsby, Next.js), Ionic, or trying out Svelte and Vue.
       </Text>
       <Text {...textProps}>
         I like exploring useful and fun tech products (surfing around
