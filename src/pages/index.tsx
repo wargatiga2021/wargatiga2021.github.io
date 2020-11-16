@@ -113,6 +113,21 @@ const ProjectsSection = ({ data }) => {
               router.push("/booklet")
             }
           />
+          <Card
+            title = "Turbud"
+            img = "/app_icons/icon_advicegen.png"
+            handleClick = {() =>
+              router.push("/turbud")
+            }
+          />
+          <Card
+            title = "Coming Soon"
+            img = "/app_icons/add-to-calendar-generator.svg"
+          />
+          <Card
+            title = "Corona kapan beres hmm"
+            img = "/app_icons/icon-covid-19-data.png"
+          />
 
         </MotionFlex>
         <Link href="/projects">
