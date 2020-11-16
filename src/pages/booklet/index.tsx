@@ -17,31 +17,35 @@ const Booklet = () => {
             Booklet 3'2021
           </Heading>
         </Box>
-        <Heading as="h2" size="lg">
-            Timeline Booklet
-        </Heading>
-        <Text>
-          Timeline pengerjaan booklet akan segera ditambahkan agar kamu tau sudah sejauh mana
-          pembuatan booklet ini.
-        </Text>
-        <Heading as="h2" size="lg">
-            Termin Pembayaran
-        </Heading>
-        <Text>
-          Termin pembayaran booklet akan segera ditambahkan 
-        </Text>
-        <Heading as="h2" size="lg">
-            Pengisian Data
-        </Heading>
         <Box marginY={22}>
-          <Link
-            href="/booklet/biodata"
-            rel="noopener noreferrer"
-            marginRight={11}
-            isExternal
-          >
-            <Button>📑 Form Biodata</Button>
-          </Link>
+          <Heading as="h2" size="lg">
+              Timeline Booklet
+          </Heading>
+          <Text>
+            Timeline pengerjaan booklet akan segera ditambahkan agar kamu tau sudah sejauh mana
+            pembuatan booklet ini.
+          </Text>
+        </Box>
+        <Box marginY={22}>
+          <Heading as="h2" size="lg">
+              Termin Pembayaran
+          </Heading>
+          <Text>
+            Termin pembayaran booklet akan segera ditambahkan 
+          </Text>
+        </Box>
+        <Box marginY={22}>
+          <Heading as="h2" size="lg">
+              Pengisian Data
+          </Heading>
+            <Link
+              href="/booklet/biodata"
+              rel="noopener noreferrer"
+              marginRight={11}
+              isExternal
+            >
+              <Button>📑 Form Biodata</Button>
+            </Link>
         </Box>
       </Box>
     </>

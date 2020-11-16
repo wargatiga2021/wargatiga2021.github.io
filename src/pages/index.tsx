@@ -75,7 +75,7 @@ const ProjectsSection = ({ data }) => {
         <Box>
           <Link href="/projects">
             <Heading as="h1" size="2xl" cursor="pointer">
-              📅 Projects and Events
+              Projects and Events
             </Heading>
           </Link>
           <Text>Di bawah tercantum kegiatan dan project yang akan kita laksanakan.</Text>
