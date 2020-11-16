@@ -16,7 +16,6 @@ const Turbud = () => {
       </Head>
       <HeadSection />
       <AboutContent />
-      <Links />
     </Box>
   );
 };

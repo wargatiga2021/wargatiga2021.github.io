@@ -16,7 +16,6 @@ const Booklet = () => {
       </Head>
       <HeadSection />
       <AboutContent />
-      <Links />
     </Box>
   );
 };
