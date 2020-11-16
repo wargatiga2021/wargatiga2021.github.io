@@ -49,7 +49,7 @@ const TabBar = () => {
           <FontAwesomeIcon icon={faBook} style={{ cursor: "pointer" }} />
         </Box>
       </Link>
-      <Link href="/blog" passHref>
+      <Link href="/turbud" passHref>
         <Box as="a" flexBasis={"25%"}>
           <FontAwesomeIcon icon={faRoute} style={{ cursor: "pointer" }} />
         </Box>

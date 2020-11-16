@@ -1,12 +1,7 @@
-import { Heading, Text, Link, Box, BoxProps } from "@chakra-ui/react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Heading, Text, Box, BoxProps } from "@chakra-ui/react";
 import Head from "next/head";
 
-import AccessibleLink from "../components/AccessibleLink";
 import MotionBox from "../components/motion/MotionBox";
-import MotionFlex from "../components/motion/MotionFlex";
 
 const About = () => {
   return (
