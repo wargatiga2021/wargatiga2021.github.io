@@ -24,7 +24,7 @@ const About = () => {
 const HeadSection = () => {
   return (
     <Box marginBottom={8}>
-      <Heading>sozonome</Heading>
+      <Heading>👋 Halo, Warga Tiga 2021!</Heading>
     </Box>
   );
 };
@@ -45,20 +45,19 @@ const AboutContent = () => {
     >
       <Heading>👋 Hi, how are you?</Heading>
       <Text {...textProps}>
-        I'm currently working as a Frontend Engineer. Most of the time I work
-        with TypeScript and React. I make fun projects in my free time and share
-        it here. Whether to explore more around React and its frameworks
-        (Gatsby, Next.js), Ionic, or trying out Svelte and Vue.
+          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
+          kalian bisa akses informasi tentang timeline/progress, termin pembayaran, 
+          dan mengisi data untuk booklet, informasi mengenai tur budaya, graduation, dan lain-lain.
       </Text>
       <Text {...textProps}>
-        I like exploring useful and fun tech products (surfing around
-        ProductHunt), traveling, and{" "}
+        Situs ini bersifat open-source dan dikembangkan menggunakan Typescript dan Next.js, 
+        kalian bisa menjadi kontributor dengan membantu mengembangkan situs ini di {" "}
         <AccessibleLink
-          href="https://instagram.com/agustinusnathaniel"
+          href="https://github.com/wargatiga2021"
           isExternal
         >
           <Text as="span" fontWeight={500}>
-            capture moments.
+            Github.
           </Text>
         </AccessibleLink>
       </Text>
@@ -124,28 +123,26 @@ const Links = () => {
       <Text fontStyle="italic">1.01 ^365 = 37.7</Text>
       <MotionFlex fontSize="4xl" {...staggerAnimationProps}>
         <MotionLinks
-          link={`https://github.com/sozonome`}
+          link={`https://github.com/wargatiga2021`}
           icon={["fab", "github"]}
         />
         <MotionLinks
-          link={`https://twitter.com/sozonome`}
+          link={`https://twitter.com/wargatiga21`}
           icon={["fab", "twitter"]}
         />
         <MotionLinks
-          link={`https://www.instagram.com/sozonome`}
+          link={`https://www.instagram.com/wargatiga21`}
           icon={["fab", "instagram"]}
         />
         <MotionLinks
-          link={`https://youtube.com/channel/UCJnYMGIHtQ8yInuq4Pc2Ttg`}
+          link={`https://www.youtube.com/watch?v=QFHrl6UgeMk`}
           icon={["fab", "youtube"]}
         />
-        <MotionLinks link={`https://dev.to/sozonome`} icon={["fab", "dev"]} />
         <MotionLinks
-          link={`https://medium.com/@agustinusnathaniel`}
-          icon={["fab", "medium"]}
-        />
+          link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
+          icon={["fab", "spotify"]} />
         <MotionLinks
-          link={`mailto:hello@sznm.dev?cc=agustinusnathaniel228@gmail.com`}
+          link={`mailto:warga32021@gmail.com`}
           icon={faEnvelope}
         />
       </MotionFlex>
