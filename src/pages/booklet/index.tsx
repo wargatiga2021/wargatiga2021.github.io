@@ -71,7 +71,6 @@ const Booklet = () => {
               <Button>📑 Form Biodata</Button>
             </Link>
         </Box>
-      </Box>
     </>
   );
 };
