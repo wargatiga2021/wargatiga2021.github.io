@@ -1,13 +1,18 @@
-import { Heading, Text, Box, BoxProps } from "@chakra-ui/react";
+import { Heading, Text, Link, Box, BoxProps } from "@chakra-ui/react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 
+import AccessibleLink from "../components/AccessibleLink";
 import MotionBox from "../components/motion/MotionBox";
+import MotionFlex from "../components/motion/MotionFlex"; 
 
-const About = () => {
+const Turbud = () => {
   return (
     <Box>
       <Head>
-        <title>About | Warga Tiga 2021</title>
+        <title>Turbud | Warga Tiga 2021</title>
       </Head>
       <HeadSection />
       <AboutContent />
@@ -45,4 +50,4 @@ const AboutContent = () => {
   );
 };
 
-export default About;
+export default Turbud;
