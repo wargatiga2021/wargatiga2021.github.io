@@ -4,9 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import * as am4core from "amcharts/amcharts4/core";
+import * as am4charts from "amcharts/amcharts4/charts";
+
 const Booklet = () => {
   return (
     <>
+    <Head>
+      <title>Booklet | Warga Tiga 2021</title>
+    </Head>
     <MotionFlex
       marginY={"2.75rem"}
       as="section"
@@ -49,6 +57,7 @@ const Booklet = () => {
             Timeline pengerjaan booklet akan segera ditambahkan agar kamu tau sudah sejauh mana
             pembuatan booklet ini.
           </Text>
+        
         </Box>
         <Box marginY={22}>
           <Heading as="h2" size="lg">
