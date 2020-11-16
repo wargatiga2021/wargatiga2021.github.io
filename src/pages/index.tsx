@@ -50,7 +50,8 @@ const HeroSection = () => {
         Warga Tiga 2021
         </Heading>
         <Text fontSize="xl">
-        👋 Halo, Warga Tiga 21! Di situs ini kalian bisa mengakses berbagai informasi, pengumuman, dan mengisi data.
+        👋 Halo, Warga Tiga 21! Di situs ini kalian bisa mengakses berbagai informasi, pengumuman, 
+        dan mengisi data.
         </Text>
       </Box>
     </MotionFlex>
