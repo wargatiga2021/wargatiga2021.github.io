@@ -127,7 +127,7 @@ const ProjectsSection = ({ data }) => {
 };
 
 // SOCIAL MEDIA
-const ProjectsSection = ({ data }) => {
+const SocialSection = ({ data }) => {
   // const router = useRouter();
   const { colorMode } = useColorMode();
 
