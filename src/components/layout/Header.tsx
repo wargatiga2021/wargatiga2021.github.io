@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Box, Flex, Text, Image, Center, Heading, Badge, useColorModeValue, useColorMode } from "@chakra-ui/react";
-import Logo from "./logo";
+import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 
 import { responsiveWidthProps } from "../../styles/customTheme";
