@@ -49,7 +49,7 @@ const AboutContent = () => {
           dan mengisi data untuk booklet, informasi mengenai tur budaya, graduation, dan lain-lain.
       </Text>
       <Text {...textProps}>
-        Situs ini bersifat open-source dan dikembangkan menggunakan Typescript dan Next.js, 
+        Situs ini bersifat open-source dan dikembangkan menggunakan Typescript, Next.js, Framer, dan Chakra UI 
         kalian bisa menjadi kontributor dengan membantu mengembangkan situs ini di {" "}
         <AccessibleLink
           href="https://github.com/wargatiga2021"
