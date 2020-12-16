@@ -127,7 +127,7 @@ const Booklet = () => {
                             <ListItem>Pelaksanaan sesi foto.&nbsp;&nbsp;</ListItem>
                             <Popover>
                               <PopoverTrigger>
-                              <IconButton size="sm" icon={<CalendarIcon />} />
+                              <IconButton aria-label="Jadwal foto" size="sm" icon={<CalendarIcon />} />
                               </PopoverTrigger>
                               <PopoverContent>
                                 <PopoverArrow />
