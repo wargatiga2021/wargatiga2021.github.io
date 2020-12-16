@@ -82,7 +82,6 @@ const Booklet = () => {
         </Box>
         </MotionFlex>
         <MotionBox
-          as="section"
           variants={{
             before: { opacity: 0, y: 20, transition: { type: "spring" } },
             after: { opacity: 1, y: 0, transition: { type: "spring" } },
