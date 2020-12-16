@@ -36,7 +36,7 @@ const HeroSection = () => {
           height={160}
           className="glow"
           src="/avatar.png"
-          alt="Warga Tiga 2021"
+          alt=""
         />
       </Box>
       <Box
