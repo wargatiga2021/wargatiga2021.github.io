@@ -1,9 +1,43 @@
-import { Box, Heading, Text, Link, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, Link, Button, OrderedList, Flex, Center, IconButton, Icon, createIcon  } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
+} from "@chakra-ui/react";
+import { List, ListItem, ListIcon } from "@chakra-ui/react";
+import { CalendarIcon, CheckCircleIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
 import Head from "next/head";
+
+const CircleIcon = (props) => (
+  <Icon viewBox="0 0 200 200" {...props}>
+    <path
+      fill="currentColor"
+      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+    />
+  </Icon>
+)
 
 const Booklet = () => {
   return (
@@ -46,101 +80,178 @@ const Booklet = () => {
         </Box>
       </MotionFlex>
           <Box marginY={22}>
-            <Heading as="h1">
-                Timeline Booklet 🕘
-            </Heading>
-            
-              <Box>
-              <Heading as="h2" size="md">
-                ‣ November - Desember
-              </Heading>
+          <Accordion allowToggle>
+            <AccordionItem>
+              <AccordionButton>
+                <Heading flex="1" textAlign="left" size="lg" my="2">
+                🕘&nbsp;&nbsp;Timeline Booklet 
+                </Heading>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel pb={4}>
+                <Text mb="2">
+                  Timeline dan progress pengerjaan buku tahunan 3'2021. 
+                  Progress yang sedang dilakukan ditandai dengan indikator
+                  khusus.
+                </Text>
+                
+                <Accordion allowToggle>
+                  <AccordionItem>
+                    <AccordionButton borderLeft="2px">
+                      <Heading flex="1" textAlign="left" size="md">
+                        ‣ November - Desember
+                      </Heading>
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <OrderedList>
+                        <ListItem>Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.</ListItem>
+                        <ListItem>Pengumpulan data setiap anak untuk dicantumkan di dalam booklet.</ListItem>
+                        <ListItem>Setiap kelas berdikusi mengenai tema, outfit, dan hal lainnya.</ListItem>
+                        <ListItem>Proses input data dan layout design oleh tim Nawa.</ListItem>
+                      </OrderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionButton borderLeft="2px" borderColor="#CDCDCD">
+                      <Heading flex="1" textAlign="left" size="md">
+                        • Januari
+                      </Heading>
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <OrderedList>
+                        <Flex>
+                          <Center>
+                            <ListItem>Pelaksanaan sesi foto.&nbsp;&nbsp;</ListItem>
+                            <Popover>
+                              <PopoverTrigger>
+                              <IconButton aria-label="Jadwal foto" size="sm" icon={<CalendarIcon />} />
+                              </PopoverTrigger>
+                              <PopoverContent>
+                                <PopoverArrow />
+                                <PopoverCloseButton />
+                                <PopoverHeader>Jadwal dan Sesi Foto</PopoverHeader>
+                                <PopoverBody>Klik tombok JADWAL FOTO di atas untuk mengetahui.</PopoverBody>
+                              </PopoverContent>
+                            </Popover>
+                          </Center>
+                        </Flex>
+                        <ListItem>Pengolahan foto oleh tim Nawa.</ListItem>
+                        <ListItem>Input foto ke layout.</ListItem>
+                        <ListItem>Revisi yang dilakukan oleh panitia.</ListItem>
+                      </OrderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionButton borderLeft="2px" borderColor="#CDCDCD">
+                      <Heading flex="1" textAlign="left" size="md">
+                        • Februari
+                      </Heading>
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <OrderedList>
+                        <ListItem>Persiapan produksi dan produksi booklet.</ListItem>
+                      </OrderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionButton borderLeft="2px" borderColor="#CDCDCD">
+                      <Heading flex="1" textAlign="left" size="md">
+                        • Maret
+                      </Heading>
+                      <AccordionIcon />
+                    </AccordionButton>
+                    <AccordionPanel pb={4}>
+                      <OrderedList>
+                        <ListItem>Pengiriman booklet kepada setiap anak dan garansi jika ada kerusakan.</ListItem>
+                      </OrderedList>
+                    </AccordionPanel>
+                  </AccordionItem>
+
+                </Accordion>
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem>
+             <AccordionButton>
+               <Heading flex="1" textAlign="left" size="lg" my="2">
+               💵&nbsp;&nbsp;Termin Pembayaran 
+               </Heading>
+               <AccordionIcon />
+             </AccordionButton>
+             <AccordionPanel pb={4}>
+              <StatGroup>
+                <Stat borderTop="2px" borderColor="Green" paddingTop="2">
+                  <StatLabel>
+                    <CheckCircleIcon color="Green"/> Termin 1
+                  </StatLabel>
+                  <StatNumber>Rp100.000,00</StatNumber>
+                  <StatHelpText>
+                    November
+                  </StatHelpText>
+                </Stat>
+                
+                <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
+                  <StatLabel>
+                    <CircleIcon color="#CDCDCD"/> Termin 2
+                  </StatLabel>
+                  <StatNumber>Rp100.000,00</StatNumber>
+                  <StatHelpText>
+                    Desember
+                  </StatHelpText>
+                </Stat>
+                
+                <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
+                  <StatLabel>
+                    <CircleIcon color="#CDCDCD"/> Termin 3
+                  </StatLabel>
+                  <StatNumber>Rp110.000,00</StatNumber>
+                  <StatHelpText>
+                    Januari
+                  </StatHelpText>
+                </Stat>
+              </StatGroup>
+             </AccordionPanel>
+           </AccordionItem>
+
+            <AccordionItem>
+             <AccordionButton>
+               <Heading flex="1" textAlign="left" size="lg" my="2">
+               📑&nbsp;&nbsp;Pengisian Data 
+               </Heading>
+               <AccordionIcon />
+             </AccordionButton>
+             <AccordionPanel pb={4}>
               <Text>
-                1. Adanya kegiatan pematangan konsep antara panitia booklet dengan tim nawa.
+                Pastikan data yang kalian masukkan benar karena setiap data yang diinput
+                krusial dan memakan waktu yang lama untuk revisi kembali.
               </Text>
-              <Text>
-                2. Pengumpulan data setiap anak untuk dicantumkan di dalam booklet.
-              </Text>
-              <Text>
-                3. Setiap kelas berdikusi mengenai tema, outfit, dan hal lainnya.
-              </Text>
-              <Text>
-                4. Proses input data dan layout design oleh tim Nawa
-              </Text>
-            </Box>
-            <Box>
-              <Heading as="h2" size="md">
-                Januari
-              </Heading>
-              <Text>
-                1. Pelaksanaan sesi foto.
-              </Text>
-              <Text>
-                2. Pengolahan foto oleh tim Nawa.
-              </Text>
-              <Text>
-                3. Input foto ke layout.
-              </Text>
-              <Text>
-                4. Revisi yang dilakukan oleh panitia.
-              </Text>
-            </Box>
-            <Box>
-              <Heading as="h2" size="md">
-                Februari
-              </Heading>
-              <Text>
-                1. Persiapan produksi dan produksi booklet.
-              </Text>
-            </Box>
-            <Box>
-              <Heading as="h2" size="md">
-                Maret
-              </Heading>
-              <Text>
-                1. Pengiriman booklet kepada setiap anak dan garansi jika ada kerusakan.
-              </Text>
-            </Box>
-          </Box>
-          <Box marginY={22}>
-            <Heading as="h1">
-                Termin Pembayaran 💵
-            </Heading>
-            <Text fontWeight={500}>
-              ‣ 9-30 November 100.000
-            </Text>
-            <Text>
-              1-31 Desember 100.000 
-            </Text>
-            <Text>
-              1-22 Januari 110.000
-            </Text>
-          </Box>
-          <Box marginY={22}>
-            <Heading as="h1">
-                Pengisian Data 📑
-            </Heading>
-            <Text>
-              Pastikan data yang kalian masukkan benar karena setiap data yang diinput
-              krusial dan memakan waktu yang lama untuk revisi kembali.
-            </Text>
-            <Box marginY={5}>
-              <Link
-                href="https://forms.gle/4wojrjeo35iJGth16"
-                rel="noopener noreferrer"
-                marginRight={11}
-                isExternal
-              >
-                <Button>🧑 Form Biodata</Button>
-              </Link>
-              {/* <Link
-                href="#"
-                rel="noopener noreferrer"
-                marginRight={11}
-                isExternal
-              > */}
-                <Button marginY={3}>🕗 Coming Soon</Button>
-              {/* </Link> */}
-              </Box>
+              <Box marginY={5}>
+                <Link
+                  href="https://forms.gle/4wojrjeo35iJGth16"
+                  rel="noopener noreferrer"
+                  marginRight={11}
+                  isExternal
+                >
+                  <Button>🧑 Form Biodata</Button>
+                </Link>
+                {/* <Link
+                  href="#"
+                  rel="noopener noreferrer"
+                  marginRight={11}
+                  isExternal
+                > */}
+                  <Button marginY={3}>🕗 Coming Soon</Button>
+                {/* </Link> */}
+                </Box>
+             </AccordionPanel>
+           </AccordionItem>
+          </Accordion>
           </Box>
     </>
   );
