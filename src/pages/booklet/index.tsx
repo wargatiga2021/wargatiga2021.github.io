@@ -21,11 +21,13 @@ import {
   StatHelpText,
   StatArrow,
   StatGroup,
+  ChakraProvider, 
 } from "@chakra-ui/react";
 import { List, ListItem, ListIcon } from "@chakra-ui/react";
 import { CalendarIcon, CheckCircleIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MotionBox from "../../components/motion/MotionBox";
 import MotionFlex from "../../components/motion/MotionFlex";
 import { useEffect } from "react";
 import Head from "next/head";
@@ -78,7 +80,16 @@ const Booklet = () => {
             booklet.
           </Text>
         </Box>
-      </MotionFlex>
+        </MotionFlex>
+        <MotionBox
+          as="section"
+          variants={{
+            before: { opacity: 0, y: 20, transition: { type: "spring" } },
+            after: { opacity: 1, y: 0, transition: { type: "spring" } },
+          }}
+          initial="before"
+          animate="after"
+        >
           <Box marginY={22}>
           <Accordion allowToggle>
             <AccordionItem>
@@ -186,9 +197,9 @@ const Booklet = () => {
              </AccordionButton>
              <AccordionPanel pb={4}>
               <StatGroup>
-                <Stat borderTop="2px" borderColor="Green" paddingTop="2">
+                <Stat borderTop="2px" borderColor="#00cc00" paddingTop="2">
                   <StatLabel>
-                    <CheckCircleIcon color="Green"/> Termin 1
+                    <CheckCircleIcon color="#00cc00"/> Termin 1
                   </StatLabel>
                   <StatNumber>Rp100.000,00</StatNumber>
                   <StatHelpText>
@@ -249,10 +260,11 @@ const Booklet = () => {
                   <Button marginY={3}>🕗 Coming Soon</Button>
                 {/* </Link> */}
                 </Box>
-             </AccordionPanel>
+            </AccordionPanel>
            </AccordionItem>
           </Accordion>
-          </Box>
+        </Box>
+      </MotionBox>
     </>
   );
 };
