@@ -107,7 +107,7 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: React.ReactElement;label: string; color: string; type: string }) => {
+  const MotionLinks = (props: { link: string; icon: React.Component; label: string; color: string; type: string }) => {
     const { link, icon, label, color, type } = props;
     return (
       <MotionBox {...childAnimationProps}>
