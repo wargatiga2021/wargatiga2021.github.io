@@ -5,6 +5,7 @@ import { FaEnvelope, FaGithub, FaInstagram, FaSpotify, FaTwitter, FaYoutube } fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import PropTypes from 'prop-types';
+import React from "react";
 
 import AccessibleLink from "../components/AccessibleLink";
 import MotionBox from "../components/motion/MotionBox";
@@ -108,7 +109,7 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: Element; label: string; color: string; type: string }) => {
+  const MotionLinks = (props: { link: string; icon: React.ReactElement; label: string; color: string; type: string }) => {
     const { link, icon, label, color, type } = props;
     return (
       <MotionBox {...childAnimationProps}>
