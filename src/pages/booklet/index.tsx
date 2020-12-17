@@ -22,6 +22,9 @@ import {
   StatArrow,
   StatGroup,
   ChakraProvider, 
+  useColorModeValue,
+  useColorMode,
+  ColorMode
 } from "@chakra-ui/react";
 import { List, ListItem, ListIcon } from "@chakra-ui/react";
 import { CalendarIcon, CheckCircleIcon } from "@chakra-ui/icons";
@@ -42,6 +45,10 @@ const CircleIcon = (props) => (
 )
 
 const Booklet = () => {
+
+  const { colorMode } = useColorMode();
+  const terminGreen = useColorModeValue("Green", "#00CC00")
+
   return (
     <>
       <Head>
@@ -196,9 +203,9 @@ const Booklet = () => {
              </AccordionButton>
              <AccordionPanel pb={4}>
               <StatGroup>
-                <Stat borderTop="2px" borderColor="#00cc00" paddingTop="2">
+                <Stat borderTop="2px" borderColor={terminGreen} paddingTop="2">
                   <StatLabel>
-                    <CheckCircleIcon color="#00cc00"/> Termin 1
+                    <CheckCircleIcon color={terminGreen}/> Termin 1
                   </StatLabel>
                   <StatNumber>Rp100.000,00</StatNumber>
                   <StatHelpText>
