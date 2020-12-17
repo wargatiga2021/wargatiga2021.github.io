@@ -30,8 +30,8 @@ import { List, ListItem, ListIcon } from "@chakra-ui/react";
 import { CalendarIcon, CheckCircleIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MotionBox from "../../components/motion/MotionBox";
-import MotionFlex from "../../components/motion/MotionFlex";
+import MotionBox from "../components/motion/MotionBox";
+import MotionFlex from "../components/motion/MotionFlex";
 import { useEffect } from "react";
 import Head from "next/head";
 
