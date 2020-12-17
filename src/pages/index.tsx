@@ -159,6 +159,8 @@ const ProjectsSection = ({ data }) => {
 
 const RecentPostSection = ({ allPostsData }) => {
   const buttonBackgroundColor = useColorModeValue("gray.100", "gray.700");
+  const { colorMode } = useColorMode();
+
 
   return (
     <Box as="section" marginY={24}>
