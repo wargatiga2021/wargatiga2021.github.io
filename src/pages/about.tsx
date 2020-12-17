@@ -1,5 +1,4 @@
 import { Heading, Text, Link, Box, BoxProps, Icon, IconButton, IconButtonProps } from "@chakra-ui/react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FaEnvelope, FaGithub, FaInstagram, FaSpotify, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -108,7 +107,7 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: IconProp; label: string; color: string; type: string }) => {
+  const MotionLinks = (props: { link: string; label: string; color: string; type: string }) => {
     const { link, icon, label, color, type } = props;
     return (
       <MotionBox {...childAnimationProps}>
@@ -126,27 +125,33 @@ const Links = () => {
         <MotionLinks
           link={`https://twitter.com/wargatiga21`}
           icon={<FaTwitter />}
+          label={"Warga Tiga 21's Twitter"}
         />
         <MotionLinks
           link={`https://www.instagram.com/wargatiga21`}
           icon={<FaInstagram />}
+          label={"Warga Tiga 21's Instagram"}
         />
         <MotionLinks
           link={`https://www.youtube.com/watch?v=QFHrl6UgeMk`}
           icon={<FaYoutube />}
+          label={"Warga Tiga 21's Youtube"}
         />
         <MotionLinks
           link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
           icon={<FaSpotify />} />
+          label={"Warga Tiga 21's Spotify"}
         <MotionLinks 
           link={`https://github.com/wargatiga2021`}
           icon={<FaGithub />}
           type={'outline'}
+          label={"Warga Tiga 21's Github"}
         />
         <MotionLinks
           link={`mailto:warga32021@gmail.com`}
           icon={<FaEnvelope />}
           type={'outline'}
+          label={"Warga Tiga 21's Email"}
         />
       </MotionFlex>
     </MotionBox>
