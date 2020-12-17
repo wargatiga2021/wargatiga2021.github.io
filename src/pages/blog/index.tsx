@@ -22,9 +22,9 @@ const BlogPosts = ({ allPostsData }: BlogPostsProps) => {
       </Head>
       <Box marginBottom={22}>
         <Heading as="h1" size="2xl">
-          Blog Posts
+          News and Information
         </Heading>
-        <Text>Just some writings</Text>
+        <Text>Informasi, artikel, berita, dan pengumuman untuk 3'2021</Text>
       </Box>
       <MotionBox
         variants={{
