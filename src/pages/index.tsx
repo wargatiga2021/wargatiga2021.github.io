@@ -189,9 +189,9 @@ const RecentPostSection = ({ allPostsData }) => {
           width="100%"
           borderRadius={20}
           height={55}
-          backgroundColor={buttonBackgroundColor}
+          backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
           _hover={{
-            backgroundColor: "gray.300",
+            backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
             color: "black",
           }}
           fontFamily="Catamaran, sans-serif"
