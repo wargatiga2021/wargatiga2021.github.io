@@ -169,10 +169,7 @@ const Booklet = () => {
                     width="560"
                     height="315"
                     src="https://www.youtube.com/embed/QFHrl6UgeMk"
-                    frameborder="1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    margin="2"
                   />
                 </Center>
              </AccordionPanel>
