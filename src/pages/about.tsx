@@ -109,53 +109,66 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: React.ReactElement; label: string; color: string; type: string }) => {
-    const { link, icon, label, color, type } = props;
-    return (
-      <MotionBox {...childAnimationProps}>
-        <Link href={link} isExternal>
-          <IconButton mr={1} icon={icon} aria-label={label} colorScheme={color} variant={type} />
-        </Link>
-      </MotionBox>
-    );
-  };
-
   return (
     <MotionBox marginY={4} {...wrapperAnimationProps}>
       <Text fontStyle="italic">Our Social Media</Text>
       <MotionFlex fontSize="4xl" {...staggerAnimationProps}>
-        <MotionLinks
-          link={`https://twitter.com/wargatiga21`}
-          icon={<FaTwitter />}
-          label={"Warga Tiga 21's Twitter"}
-        />
-        <MotionLinks
-          link={`https://www.instagram.com/wargatiga21`}
-          icon={<FaInstagram />}
-          label={"Warga Tiga 21's Instagram"}
-        />
-        <MotionLinks
-          link={`https://www.youtube.com/watch?v=QFHrl6UgeMk`}
-          icon={<FaYoutube />}
-          label={"Warga Tiga 21's Youtube"}
-        />
-        <MotionLinks
-          link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
-          icon={<FaSpotify />} 
-          label={"Warga Tiga 21's Spotify"}
-        />
-        <MotionLinks 
-          link={`https://github.com/wargatiga2021`}
-          icon={<FaGithub />}
-          type={'outline'}
-          label={"Warga Tiga 21's Github"}
-        />
-        <MotionLinks
-          link={`mailto:warga32021@gmail.com`}
-          icon={<FaEnvelope />}
-          type={'outline'}
-          label={"Warga Tiga 21's Email"}
-        />
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://twitter.com/wargatiga21" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaTwitter />} 
+              aria-label="Warga Tiga 21's Twitter"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://www.instagram.com/wargatiga21/" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaInstagram />} 
+              aria-label="Warga Tiga 21's Instagram"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://www.youtube.com/watch?v=QFHrl6UgeMk" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaYoutube />} 
+              aria-label="Warga Tiga 21's Youtube"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaSpotify />} 
+              aria-label="Warga Tiga 21's Spotify"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://github.com/wargatiga2021" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaGithub />} 
+              aria-label="Warga Tiga 21's Github"
+              variant="outline"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="mailto:warga32021@gmail.com" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaEnvelope />} 
+              aria-label="Warga Tiga 21's Email"
+              variant="outline"
+            />
+          </Link>
+        </MotionBox>
       </MotionFlex>
     </MotionBox>
   );
