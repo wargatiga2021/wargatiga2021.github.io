@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <>
       <Image
-        src={colorMode === "light" ? "/avatar-black.png" : "/avatar-white.png"}
+        src={colorMode === "light" ? "/avatar-dark.png" : "/avatar-light.png"}
         width={35}
         height={35}
         marginRight="2"
