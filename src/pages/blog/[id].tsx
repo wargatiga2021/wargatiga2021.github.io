@@ -20,7 +20,7 @@ const BlogPost = ({ postData }: BlogPostProps) => {
   return (
     <Box>
       <Head>
-        <title>{postData.title} | sozonome</title>
+        <title>{postData.title} | Warga Tiga 21</title>
       </Head>
       <Flex alignItems="center" marginBottom={8}>
         <Box flexBasis={["80%"]}>

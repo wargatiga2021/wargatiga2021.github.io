@@ -25,7 +25,7 @@ const Turbud = () => {
           <Image
             width={160}
             height={160}
-            src="/app_icons/icon_advicegen.png"
+            src="/app_icons/beach.png"
             alt="Warga Tiga 2021"
           />
         </Box>

@@ -18,9 +18,9 @@ const generateRssItem = async (post: BlogPostType) => {
 
 const generateRss = async (posts: Array<BlogPostType>): Promise<string> => {
   const feed = new RSS({
-    title: "sozonome's blog",
-    site_url: "https://sznm.dev",
-    feed_url: "https://sznm.dev/rss.xml",
+    title: "Warga Tiga 21's Blog",
+    site_url: "https://2021.wargati.ga",
+    feed_url: "https://2021.wargati.ga/rss.xml",
   });
 
   for (let i = 0; i < posts.length; i++) {
@@ -30,11 +30,11 @@ const generateRss = async (posts: Array<BlogPostType>): Promise<string> => {
       const item: any = await generateRssItem(posts[i]);
       feed.item({
         title: item.title,
-        guid: `https://sznm.dev/blog/${item.id}`,
-        url: `https://sznm.dev/blog/${item.id}`,
+        guid: `https://2021.wargati.ga/blog/${item.id}`,
+        url: `https://2021.wargati.ga/blog/${item.id}`,
         date: item.date,
         description: "",
-        author: "sozonome",
+        author: "Warga Tiga 21",
         custom_elements: [{ "content:encoded": item.contentHtml }],
       });
     }

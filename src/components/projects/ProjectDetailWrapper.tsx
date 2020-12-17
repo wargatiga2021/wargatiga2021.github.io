@@ -6,10 +6,13 @@ import {
   Button,
   Image as ChakraImage,
   useColorMode,
+  Icon,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaEye, FaGitAlt } from "react-icons/fa";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 import MotionBox from "../motion/MotionBox";
 
@@ -83,10 +86,26 @@ const ProjectDetailWrapper = ({ projectData }: ProjectDetailWrapperProps) => {
               ))}
             </Flex>
           )}
-          <Flex marginY={22} flexWrap="wrap">
+          <Flex marginY={22} flexWrap="wrap" align="center">
+            {projectData.repoLink && (
+              <Link href={projectData.repoLink} passHref>
+                <Button
+                  leftIcon={<FaGitAlt />}
+                  backgroundColor={
+                    colorMode === "light" ? "gray.300" : "teal.700"
+                  }
+                  marginRight={11}
+                  marginBottom={11}
+                  _hover={{ backgroundColor: "teal.300", color: "black" }}
+                >                  
+                  Repository
+                </Button>
+              </Link>
+            )}
             {projectData.projectLink && (
               <Link href={projectData.projectLink} passHref>
                 <Button
+                  rightIcon={<ArrowForwardIcon />}
                   backgroundColor={
                     colorMode === "light" ? "orange.200" : "orange.400"
                   }
@@ -116,19 +135,6 @@ const ProjectDetailWrapper = ({ projectData }: ProjectDetailWrapperProps) => {
                     style={{ marginRight: 11 }}
                   />
                   Play Store
-                </Button>
-              </Link>
-            )}
-            {projectData.repoLink && (
-              <Link href={projectData.repoLink} passHref>
-                <Button
-                  backgroundColor={
-                    colorMode === "light" ? "gray.300" : "teal.700"
-                  }
-                  marginBottom={11}
-                  _hover={{ backgroundColor: "teal.300", color: "black" }}
-                >
-                  Repo
                 </Button>
               </Link>
             )}

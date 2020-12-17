@@ -1,8 +1,11 @@
-import { Heading, Text, Link, Box, BoxProps } from "@chakra-ui/react";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { Heading, Text, Link, Box, BoxProps, Icon, IconButton, IconButtonProps } from "@chakra-ui/react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FaEnvelope, FaGithub, FaInstagram, FaSpotify, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
+import PropTypes from 'prop-types';
+import React from "react";
 
 import AccessibleLink from "../components/AccessibleLink";
 import MotionBox from "../components/motion/MotionBox";
@@ -44,12 +47,13 @@ const AboutContent = () => {
       animate="after"
     >
       <Text {...textProps}>
-          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
-          kalian bisa akses informasi tentang timeline/progress, termin pembayaran, 
-          dan mengisi data untuk booklet, informasi mengenai tur budaya, graduation, dan lain-lain.
+          Stay tuned terus ya di website ini. Kalian bisa akses informasi tentang timeline/progress, 
+          termin pembayaran, dan mengisi data untuk booklet, informasi mengenai tur budaya, 
+          graduation, bahkan cerita pengalaman teman-teman kita selama bersekolah di SMAN 3 Bandung 
+          ataupun setelah lulus nanti.
       </Text>
       <Text {...textProps}>
-        Situs ini bersifat open-source dan dikembangkan menggunakan Typescript dan Next.js, 
+        Situs ini bersifat open-source dan dikembangkan menggunakan Typescript, Next.js, Framer, dan Chakra UI 
         kalian bisa menjadi kontributor dengan membantu mengembangkan situs ini di {" "}
         <AccessibleLink
           href="https://github.com/wargatiga2021"
@@ -106,44 +110,66 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: IconProp }) => {
-    const { link, icon } = props;
-    return (
-      <MotionBox {...childAnimationProps}>
-        <Link href={link} marginRight={11} isExternal>
-          <FontAwesomeIcon icon={icon} />
-        </Link>
-      </MotionBox>
-    );
-  };
-
   return (
     <MotionBox marginY={4} {...wrapperAnimationProps}>
       <Text fontStyle="italic">Our Social Media</Text>
       <MotionFlex fontSize="4xl" {...staggerAnimationProps}>
-        <MotionLinks
-          link={`https://github.com/wargatiga2021`}
-          icon={["fab", "github"]}
-        />
-        <MotionLinks
-          link={`https://twitter.com/wargatiga21`}
-          icon={["fab", "twitter"]}
-        />
-        <MotionLinks
-          link={`https://www.instagram.com/wargatiga21`}
-          icon={["fab", "instagram"]}
-        />
-        <MotionLinks
-          link={`https://www.youtube.com/watch?v=QFHrl6UgeMk`}
-          icon={["fab", "youtube"]}
-        />
-        <MotionLinks
-          link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
-          icon={["fab", "spotify"]} />
-        <MotionLinks
-          link={`mailto:warga32021@gmail.com`}
-          icon={faEnvelope}
-        />
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://twitter.com/wargatiga21" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaTwitter />} 
+              aria-label="Warga Tiga 21's Twitter"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://www.instagram.com/wargatiga21/" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaInstagram />} 
+              aria-label="Warga Tiga 21's Instagram"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://www.youtube.com/watch?v=QFHrl6UgeMk" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaYoutube />} 
+              aria-label="Warga Tiga 21's Youtube"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaSpotify />} 
+              aria-label="Warga Tiga 21's Spotify"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="https://github.com/wargatiga2021" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaGithub />} 
+              aria-label="Warga Tiga 21's Github"
+              variant="outline"
+            />
+          </Link>
+        </MotionBox>
+        <MotionBox {...childAnimationProps}>
+          <Link href="mailto:warga32021@gmail.com" isExternal>
+            <IconButton 
+              mr={1}
+              icon={<FaEnvelope />} 
+              aria-label="Warga Tiga 21's Email"
+              variant="outline"
+            />
+          </Link>
+        </MotionBox>
       </MotionFlex>
     </MotionBox>
   );
