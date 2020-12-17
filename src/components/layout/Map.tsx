@@ -39,7 +39,6 @@ function Map() {
           <AspectRatio ratio={16 / 9}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7921.637014215003!2d107.615196!3d-6.912292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec1e28a948930064!2sSMA%20Negeri%203%20Bandung!5e0!3m2!1sen!2sid!4v1608195436372!5m2!1sen!2sid"
-              alt="SMAN 3 Bandung Map"
             />
           </AspectRatio>
           </ModalBody>
