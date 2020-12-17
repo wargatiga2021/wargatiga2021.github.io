@@ -47,9 +47,10 @@ const AboutContent = () => {
       animate="after"
     >
       <Text {...textProps}>
-          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
-          kalian bisa akses informasi tentang timeline/progress, termin pembayaran, 
-          dan mengisi data untuk booklet, informasi mengenai tur budaya, graduation, dan lain-lain.
+          Stay tuned terus ya di website ini. Kalian bisa akses informasi tentang timeline/progress, 
+          termin pembayaran, dan mengisi data untuk booklet, informasi mengenai tur budaya, 
+          graduation, bahkan cerita pengalaman teman-teman kita selama bersekolah di SMAN 3 Bandung 
+          ataupun setelah lulus nanti.
       </Text>
       <Text {...textProps}>
         Situs ini bersifat open-source dan dikembangkan menggunakan Typescript, Next.js, Framer, dan Chakra UI 

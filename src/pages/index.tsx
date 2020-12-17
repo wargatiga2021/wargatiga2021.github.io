@@ -53,8 +53,8 @@ const HeroSection = () => {
           Halo! Warga Tiga 2021,
         </Heading>
         <Text fontSize="xl">
-          Websitenya masih dalam proses pengembangan nih, nanti kalau udah beres semua,
-          kalian bisa akses banyak informasi di sini.
+          Selamat datang di situs web 3'2021. Kalian bisa mengakses banyak hal di sini. 
+          Mulai dari kegiatan, informasi, cerita, dan lain-lain.
         </Text>
       </Box>
     </MotionFlex>
