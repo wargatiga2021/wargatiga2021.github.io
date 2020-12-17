@@ -107,7 +107,7 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; label: string; color: string; type: string }) => {
+  const MotionLinks = (props: { link: string; icon: React.ReactElement;label: string; color: string; type: string }) => {
     const { link, icon, label, color, type } = props;
     return (
       <MotionBox {...childAnimationProps}>
@@ -139,8 +139,9 @@ const Links = () => {
         />
         <MotionLinks
           link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
-          icon={<FaSpotify />} />
+          icon={<FaSpotify />} 
           label={"Warga Tiga 21's Spotify"}
+        />
         <MotionLinks 
           link={`https://github.com/wargatiga2021`}
           icon={<FaGithub />}
