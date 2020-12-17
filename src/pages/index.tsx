@@ -1,19 +1,23 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Box, Heading, Text, Button, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 
 import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
+import MotionBox from "../components/motion/MotionBox";
+import BlogPostPreview from "../components/blog/BlogPostPreview";
 
 import { getSortedProjectsData } from "../helpers/projects";
+import { getSortedPostsData } from "../helpers/posts";
 
-const Home = ({ allProjectsData }) => {
+const Home = ({ allProjectsData, allPostsData }) => {
   return (
     <>
       <HeroSection />
       <ProjectsSection data={allProjectsData} />
+      <RecentPostSection allPostsData={allPostsData} />
     </>
   );
 };
@@ -73,12 +77,13 @@ const ProjectsSection = ({ data }) => {
     <Box as="section" paddingY={22}>
       <Box>
         <Box>
-          <Link href="/projects">
-            <Heading as="h1" size="2xl" cursor="pointer">
-              Projects and Events
-            </Heading>
-          </Link>
-          <Text>Di bawah tercantum kegiatan dan project yang akan kita laksanakan.</Text>
+          <Heading as="h1" size="2xl">
+            Projects and Events
+          </Heading>
+          <Text>
+            Agenda, kegiatan, dan project yang telah/sedang/akan kita laksanakan. 
+            Tap/klik untuk melihat detailnya.
+          </Text>
         </Box>
         <MotionFlex
           wrap="wrap"
@@ -115,18 +120,21 @@ const ProjectsSection = ({ data }) => {
           />
           <Card
             title = "Turbud"
-            img = "/app_icons/icon_advicegen.png"
+            img = "/app_icons/beach.png"
             handleClick = {() =>
               router.push("/turbud")
             }
           />
           <Card
-            title = "Coming Soon"
-            img = "/app_icons/add-to-calendar-generator.svg"
+            title = "Research Based Learning"
+            img = "/app_icons/rbl.png"
+            handleClick = {() =>
+              router.push("/rbl")
+            }
           />
           <Card
-            title = "Corona kapan beres hmm"
-            img = "/app_icons/icon-covid-19-data.png"
+            title = "Gayapatri"
+            img = "/app_icons/gayapatri.png"
           />
 
         </MotionFlex>
@@ -149,11 +157,60 @@ const ProjectsSection = ({ data }) => {
   );
 };
 
+const RecentPostSection = ({ allPostsData }) => {
+  const buttonBackgroundColor = useColorModeValue("gray.100", "gray.700");
+
+  return (
+    <Box as="section" marginY={24}>
+      <Heading size="2xl" marginBottom={2}>
+        News and Information
+      </Heading>
+      <Text>Informasi, artikel, berita, dan pengumuman untuk 3'2021.</Text>
+      <MotionBox
+        marginTop={22}
+        variants={{
+          before: {},
+          after: { transition: { staggerChildren: 0.06 } },
+        }}
+        initial="before"
+        animate="after"
+      >
+        {allPostsData
+          .filter((post) => post.published === true)
+          .slice(0, 2)
+          .map((postData, index) => (
+            <BlogPostPreview postData={postData} key={index} />
+          ))}
+      </MotionBox>
+
+      <Link href="/blog" passHref>
+        <Button
+          isFullWidth
+          width="100%"
+          borderRadius={20}
+          height={55}
+          backgroundColor={buttonBackgroundColor}
+          _hover={{
+            backgroundColor: "gray.300",
+            color: "black",
+          }}
+          fontFamily="Catamaran, sans-serif"
+        >
+          lihat selengkapnya
+        </Button>
+      </Link>
+    </Box>
+  );
+};
+
 export const getStaticProps = async () => {
   const allProjectsData = getSortedProjectsData();
+  const allPostsData = getSortedPostsData();
+
   return {
     props: {
       allProjectsData,
+      allPostsData,
     },
   };
 };
