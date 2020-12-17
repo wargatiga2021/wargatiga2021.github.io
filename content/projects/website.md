@@ -10,8 +10,4 @@ featured: true
 appStoreLink: 
 playStoreLink: 
 stacks:
-  - nextjs
-  - chakra-ui
-  - framer
-  - vercel
 ---
