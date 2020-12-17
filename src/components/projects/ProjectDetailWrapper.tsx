@@ -88,7 +88,7 @@ const ProjectDetailWrapper = ({ projectData }: ProjectDetailWrapperProps) => {
           )}
           <Flex marginY={22} flexWrap="wrap" align="center">
             {projectData.repoLink && (
-              <Link href={projectData.repoLink} isExternal>
+              <Link href={projectData.repoLink} passHref>
                 <Button
                   leftIcon={<FaGitAlt />}
                   backgroundColor={
