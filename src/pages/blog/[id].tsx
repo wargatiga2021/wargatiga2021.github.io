@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Icon, HStack } from "@chakra-ui/react";
 import Image from "next/image";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
+import { FaUserEdit, FaRegCalendarAlt, FaRegUserCircle, FaRegUser } from "react-icons/fa";
 
 import { renderers } from "../../components/blog/renderers";
 
@@ -25,7 +26,8 @@ const BlogPost = ({ postData }: BlogPostProps) => {
       <Flex alignItems="center" marginBottom={8}>
         <Box flexBasis={["80%"]}>
           <Heading size="2xl">{postData.title}</Heading>
-          <Text>{dateFormatLong(postData.date)}</Text>
+          <HStack><Icon as={FaRegUser} boxSize={4} /><Text>{postData.author}</Text></HStack>
+          <HStack><Icon as={FaRegCalendarAlt} boxSize={4} /><Text>{dateFormatLong(postData.date)}</Text></HStack>
         </Box>
         <Flex flexBasis={["20%"]}>
           <Box marginLeft="auto" width="60%">
