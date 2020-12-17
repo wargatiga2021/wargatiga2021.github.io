@@ -18,7 +18,7 @@ const generateRssItem = async (post: BlogPostType) => {
 
 const generateRss = async (posts: Array<BlogPostType>): Promise<string> => {
   const feed = new RSS({
-    title: "sozonome's blog",
+    title: "Warga Tiga 21's Blog",
     site_url: "https://2021.wargati.ga",
     feed_url: "https://2021.wargati.ga/rss.xml",
   });
@@ -34,7 +34,7 @@ const generateRss = async (posts: Array<BlogPostType>): Promise<string> => {
         url: `https://2021.wargati.ga/blog/${item.id}`,
         date: item.date,
         description: "",
-        author: "sozonome",
+        author: "Warga Tiga 21",
         custom_elements: [{ "content:encoded": item.contentHtml }],
       });
     }
