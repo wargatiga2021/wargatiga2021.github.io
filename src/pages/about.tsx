@@ -1,6 +1,8 @@
-import { Heading, Text, Link, Box, BoxProps } from "@chakra-ui/react";
+import { Heading, Text, Link, Box, BoxProps, Icon, IconButton, IconButtonProps } from "@chakra-ui/react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FaEnvelope, FaGithub, FaInstagram, FaSpotify, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 
@@ -106,12 +108,12 @@ const Links = () => {
     },
   };
 
-  const MotionLinks = (props: { link: string; icon: IconProp }) => {
-    const { link, icon } = props;
+  const MotionLinks = (props: { link: string; icon: IconProp; label: string; color: string; type: string }) => {
+    const { link, icon, label, color, type } = props;
     return (
       <MotionBox {...childAnimationProps}>
-        <Link href={link} marginRight={11} isExternal>
-          <FontAwesomeIcon icon={icon} />
+        <Link href={link} isExternal>
+          <IconButton mr={1} icon={icon} aria-label={label} colorScheme={color} variant={type} />
         </Link>
       </MotionBox>
     );
@@ -122,27 +124,29 @@ const Links = () => {
       <Text fontStyle="italic">Our Social Media</Text>
       <MotionFlex fontSize="4xl" {...staggerAnimationProps}>
         <MotionLinks
-          link={`https://github.com/wargatiga2021`}
-          icon={["fab", "github"]}
-        />
-        <MotionLinks
           link={`https://twitter.com/wargatiga21`}
-          icon={["fab", "twitter"]}
+          icon={<FaTwitter />}
         />
         <MotionLinks
           link={`https://www.instagram.com/wargatiga21`}
-          icon={["fab", "instagram"]}
+          icon={<FaInstagram />}
         />
         <MotionLinks
           link={`https://www.youtube.com/watch?v=QFHrl6UgeMk`}
-          icon={["fab", "youtube"]}
+          icon={<FaYoutube />}
         />
         <MotionLinks
           link={`https://open.spotify.com/user/z48wo09r6tbcyr7durogzkifs?si=VLJEpPBeSriN3kjyW_1pzQ`}
-          icon={["fab", "spotify"]} />
+          icon={<FaSpotify />} />
+        <MotionLinks 
+          link={`https://github.com/wargatiga2021`}
+          icon={<FaGithub />}
+          type={'outline'}
+        />
         <MotionLinks
           link={`mailto:warga32021@gmail.com`}
-          icon={faEnvelope}
+          icon={<FaEnvelope />}
+          type={'outline'}
         />
       </MotionFlex>
     </MotionBox>
