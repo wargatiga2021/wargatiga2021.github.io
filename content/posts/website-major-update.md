@@ -1,6 +1,7 @@
 ---
 title: Website Major Update
-date: "2020-12-17"
+author: Farell Faiz Firmansyah
+date: "2020-12-18"
 slug: "website-major-update"
 thumbnail: "/thumbnails/address-book.png"
 published: true
@@ -74,91 +75,91 @@ Selain itu, pada bagian termin menjadi lebih tertata, rapi, dan enak dipandang d
 
 
 Berikut contoh penggunaan stat untuk termin:
-```
-    import {
-        Accordion,
-        AccordionItem,
-        AccordionButton,
-        AccordionPanel,
-        AccordionIcon,
-        Heading,
-        Stat,
-        StatLabel,
-        StatNumber,
-        StatHelpText,
-        StatArrow,
-        StatGroup,
-        useColorModeValue,
-        useColorMode,
-        Icon
-    } from "@chakra-ui/react";
+```ts
+import {
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Heading,
+    Stat,
+    StatLabel,
+    StatNumber,
+    StatHelpText,
+    StatArrow,
+    StatGroup,
+    useColorModeValue,
+    useColorMode,
+    Icon
+} from "@chakra-ui/react";
+
+import { CheckCircleIcon } from "@chakra-ui/icons";
+
+const CircleIcon = (props) => (
+    <Icon viewBox="0 0 200 200" {...props}>
+        <path
+        fill="currentColor"
+        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+        />
+    </Icon>
+)
+
+const Termin = () => {
+
+    const { colorMode } = useColorMode();
+    const terminGreen = useColorModeValue("Green", "#00CC00")
+  
+    return (
+      <>
+        <Accordion>
+            <AccordionItem>
+              <AccordionButton>
+                <Heading flex="1" textAlign="left" size="lg" my="2">
+                💵&nbsp;&nbsp;Termin Pembayaran 
+                </Heading>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel pb={4}>
+              <StatGroup>
+                <Stat borderTop="2px" borderColor={terminGreen} paddingTop="2">
+                  <StatLabel>
+                    <CheckCircleIcon color={terminGreen}/> Termin 1
+                  </StatLabel>
+                  <StatNumber>Rp100.000,00</StatNumber>
+                  <StatHelpText>
+                    November
+                  </StatHelpText>
+                </Stat>
+                
+                <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
+                  <StatLabel>
+                    <CircleIcon color="#CDCDCD"/> Termin 2
+                  </StatLabel>
+                  <StatNumber>Rp100.000,00</StatNumber>
+                  <StatHelpText>
+                    Desember
+                  </StatHelpText>
+                </Stat>
+                
+                <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
+                  <StatLabel>
+                    <CircleIcon color="#CDCDCD"/> Termin 3
+                  </StatLabel>
+                  <StatNumber>Rp110.000,00</StatNumber>
+                  <StatHelpText>
+                    Januari
+                  </StatHelpText>
+                </Stat>
+              </StatGroup>
+              </AccordionPanel>
+            </AccordionItem>
+        </Accordion>
+    </>
+  );
+};
     
-    import { CheckCircleIcon } from "@chakra-ui/icons";
-    
-    const CircleIcon = (props) => (
-        <Icon viewBox="0 0 200 200" {...props}>
-            <path
-            fill="currentColor"
-            d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-            />
-        </Icon>
-    )
-    
-    const Termin = () => {
-    
-        const { colorMode } = useColorMode();
-        const terminGreen = useColorModeValue("Green", "#00CC00")
-      
-        return (
-          <>
-            <Accordion>
-                <AccordionItem>
-                 <AccordionButton>
-                   <Heading flex="1" textAlign="left" size="lg" my="2">
-                   💵&nbsp;&nbsp;Termin Pembayaran 
-                   </Heading>
-                   <AccordionIcon />
-                 </AccordionButton>
-                 <AccordionPanel pb={4}>
-                  <StatGroup>
-                    <Stat borderTop="2px" borderColor={terminGreen} paddingTop="2">
-                      <StatLabel>
-                        <CheckCircleIcon color={terminGreen}/> Termin 1
-                      </StatLabel>
-                      <StatNumber>Rp100.000,00</StatNumber>
-                      <StatHelpText>
-                        November
-                      </StatHelpText>
-                    </Stat>
-                    
-                    <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
-                      <StatLabel>
-                        <CircleIcon color="#CDCDCD"/> Termin 2
-                      </StatLabel>
-                      <StatNumber>Rp100.000,00</StatNumber>
-                      <StatHelpText>
-                        Desember
-                      </StatHelpText>
-                    </Stat>
-                    
-                    <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
-                      <StatLabel>
-                        <CircleIcon color="#CDCDCD"/> Termin 3
-                      </StatLabel>
-                      <StatNumber>Rp110.000,00</StatNumber>
-                      <StatHelpText>
-                        Januari
-                      </StatHelpText>
-                    </Stat>
-                  </StatGroup>
-                 </AccordionPanel>
-               </AccordionItem>
-            </Accordion>
-        </>
-      );
-    };
-    
-    export default Termin;
+export default Termin;
 ```
 
 ### Halaman Khusus
@@ -177,6 +178,17 @@ Pada versi terbaru, lebih difokuskan untuk dipakai ke halaman yang lebih *genera
 ![Gambar halaman khusus project.](https://2021.wargati.ga/images/website-major-update/projects-events.png)
 ##### Halaman News and Information (Blog)
 ![Gambar halaman khusus project.](https://2021.wargati.ga/images/website-major-update/blog-post.png)
+
+### 404
+Ada juga halaman saat kamu tersesat. Ya, biasanya berbunyi "404 not found". Kita coba buat lebih mernarik:
+
+![Gambar halaman 404.](https://2021.wargati.ga/images/website-major-update/404.png)
+
+Selain itu, kita lihat judul tabnya:
+
+![Gambar judul tab 404.](https://2021.wargati.ga/images/website-major-update/baby-lost.png)
+
+Menarik
 
 ### About
 Yang terakhir yakni pembaruan di halaman *about*. Tidak signifikan, tapi lebih baik. Terletak pada bagian daftar sosial media. Langsung aja cekidot:
