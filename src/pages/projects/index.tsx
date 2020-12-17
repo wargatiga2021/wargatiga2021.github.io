@@ -20,10 +20,10 @@ const Projects = ({ allProjectsData }: ProjectsProps) => {
       </Head>
       <Box marginBottom={22}>
         <Heading as="h1" size="2xl">
-          📅 Projects and Event
+          Projects and Event
         </Heading>
         <Heading as="p" size="md" fontWeight="normal">
-        Di bawah tercantum kegiatan dan project yang akan kita laksanakan.
+        Informasi mengenai agenda, project, dan kegiatan yang akan kita lakukan dapat diakses di sini.
         </Heading>
       </Box>
       <MotionBox
