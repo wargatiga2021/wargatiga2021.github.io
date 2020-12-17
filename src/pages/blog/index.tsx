@@ -18,7 +18,7 @@ const BlogPosts = ({ allPostsData }: BlogPostsProps) => {
   return (
     <Box>
       <Head>
-        <title>Blog Posts | sozonome</title>
+        <title>Blog Posts | Warga Tiga 21</title>
       </Head>
       <Box marginBottom={22}>
         <Heading as="h1" size="2xl">
