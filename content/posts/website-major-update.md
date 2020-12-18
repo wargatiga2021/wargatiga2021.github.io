@@ -1,6 +1,6 @@
 ---
 title: Website Major Update
-author: "Farell Faiz Firmansyah, Agus Nathanael"
+author: "Farell Faiz Firmansyah"
 date: "2020-12-18"
 slug: "website-major-update"
 thumbnail: "/thumbnails/address-book.png"
