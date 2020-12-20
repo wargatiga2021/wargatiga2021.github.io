@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Box, Heading, Text, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 
+import Divider from "../components/layout/Divider";
 import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
 import MotionBox from "../components/motion/MotionBox";
@@ -74,86 +75,89 @@ const ProjectsSection = ({ data }) => {
   });
 
   return (
-    <Box as="section" paddingY={22}>
-      <Box>
+    <>
+      <Box as="section" paddingY={22}>
         <Box>
-          <Heading as="h1" size="2xl">
-            Projects and Events
-          </Heading>
-          <Text>
-            Agenda, kegiatan, dan project yang telah/sedang/akan kita laksanakan. 
-            Tap/klik untuk melihat detailnya.
-          </Text>
-        </Box>
-        <MotionFlex
-          wrap="wrap"
-          marginTop={22}
-          variants={{
-            before: {},
-            after: { transition: { staggerChildren: 0.06 } },
-          }}
-          initial="before"
-          animate="after"
-        >
-
-          {/* {data
-            .filter((project) => project.highlight && project)
-            .map(({ id, title, thumbnail }, index) => {
-              return (
-                <Card
-                  title={title}
-                  handleClick={() =>
-                    router.push("/projects/[id]", `/projects/${id}`)
-                  }
-                  img={thumbnail}
-                  key={index}
-                />
-              );
-            })} */}
-
-          <Card
-            title = "Booklet"
-            img = "/app_icons/desbook-pwa.png"
-            handleClick = {() =>
-              router.push("/booklet")
-            }
-          />
-          <Card
-            title = "Turbud"
-            img = "/app_icons/beach.png"
-            handleClick = {() =>
-              router.push("/turbud")
-            }
-          />
-          <Card
-            title = "Research Based Learning"
-            img = "/app_icons/rbl.png"
-            handleClick = {() =>
-              router.push("/rbl")
-            }
-          />
-          <Card
-            title = "Gayapatri"
-            img = "/app_icons/gayapatri.png"
-          />
-
-        </MotionFlex>
-        <Link href="/projects">
-          <Button
-            width="100%"
-            borderRadius={20}
-            height={55}
-            backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
-            _hover={{
-              backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
-              color: "black",
+          <Box>
+            <Heading as="h1" size="2xl">
+              Projects and Events
+            </Heading>
+            <Text>
+              Agenda, kegiatan, dan project yang telah/sedang/akan kita laksanakan. 
+              Tap/klik untuk melihat detailnya.
+            </Text>
+          </Box>
+          <MotionFlex
+            wrap="wrap"
+            marginTop={22}
+            variants={{
+              before: {},
+              after: { transition: { staggerChildren: 0.06 } },
             }}
+            initial="before"
+            animate="after"
           >
-            lihat selengkapnya
-          </Button>
-        </Link>
+
+            {/* {data
+              .filter((project) => project.highlight && project)
+              .map(({ id, title, thumbnail }, index) => {
+                return (
+                  <Card
+                    title={title}
+                    handleClick={() =>
+                      router.push("/projects/[id]", `/projects/${id}`)
+                    }
+                    img={thumbnail}
+                    key={index}
+                  />
+                );
+              })} */}
+
+            <Card
+              title = "Booklet"
+              img = "/app_icons/desbook-pwa.png"
+              handleClick = {() =>
+                router.push("/booklet")
+              }
+            />
+            <Card
+              title = "Turbud"
+              img = "/app_icons/beach.png"
+              handleClick = {() =>
+                router.push("/turbud")
+              }
+            />
+            <Card
+              title = "Research Based Learning"
+              img = "/app_icons/rbl.png"
+              handleClick = {() =>
+                router.push("/rbl")
+              }
+            />
+            <Card
+              title = "Gayapatri"
+              img = "/app_icons/gayapatri.png"
+            />
+
+          </MotionFlex>
+          <Link href="/projects">
+            <Button
+              width="100%"
+              borderRadius={20}
+              height={55}
+              backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
+              _hover={{
+                backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
+                color: "black",
+              }}
+            >
+              lihat selengkapnya
+            </Button>
+          </Link>
+        </Box>
       </Box>
-    </Box>
+      <Divider />
+    </>
   );
 };
 
@@ -163,7 +167,7 @@ const RecentPostSection = ({ allPostsData }) => {
 
 
   return (
-    <Box as="section" marginY={24}>
+    <Box as="section" marginY={5}>
       <Heading size="2xl" marginBottom={2}>
         News and Information
       </Heading>
