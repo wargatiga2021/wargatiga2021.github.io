@@ -60,7 +60,16 @@ const AboutContent = () => {
           isExternal
         >
           <Text as="span" fontWeight={500}>
-            Github.
+            Github. {" "}
+          </Text>
+        </AccessibleLink>
+        Based on {" "}
+        <AccessibleLink
+          href="https://github.com/sozonome/sznm.dev"
+          isExternal
+        >
+          <Text as="span" fontWeight={500}>
+            Sozonome's dev site.
           </Text>
         </AccessibleLink>
       </Text>
