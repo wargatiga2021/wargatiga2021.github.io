@@ -27,12 +27,12 @@
         "@types/rss": "^0.0.28",
         "framer-motion": "^2.9.5",
         "gray-matter": "^4.0.2",
-        "next": "^10.0.0",
+        "next": "^10.0.4",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-grid-gallery": "^0.5.5",
         "react-icons": "^3.11.0",
-        "react-images": "^1.1.7",
+        "react-images": "^0.6.7",
         "react-markdown": "^5.0.2",
         "react-multi-carousel": "^2.6.1",
         "react-syntax-highlighter": "^15.3.0",
@@ -41,7 +41,8 @@
         "rss": "^1.2.2",
         "sass": "^1.26.11",
         "typeface-markazi-text": "^1.1.4",
-        "typeface-work-sans": "^0.0.72"
+        "typeface-work-sans": "^0.0.72",
+        "unified": "^9.2.0"
     },
     "devDependencies": {
         "@babel/core": "^7.12.9",
