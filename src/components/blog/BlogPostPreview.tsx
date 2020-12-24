@@ -1,5 +1,4 @@
-import { Box, Heading, Text, Flex, useColorModeValue, useColorMode, Icon } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Heading, Text, Flex, useColorModeValue, useColorMode, Icon, Image } from "@chakra-ui/react";
 
 import MotionBox from "../motion/MotionBox";
 import AccessibleLink from "../AccessibleLink";
