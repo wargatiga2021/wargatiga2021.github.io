@@ -1,23 +1,24 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Box, Heading, Text, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, useColorMode, useColorModeValue, Grid, GridItem } from "@chakra-ui/react";
 import Image from "next/image";
 
-import Divider from "../components/layout/Divider";
 import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
 import MotionBox from "../components/motion/MotionBox";
 import BlogPostPreview from "../components/blog/BlogPostPreview";
+import FeaturesSection from "../components/layout/Features";
 
 import { getSortedProjectsData } from "../helpers/projects";
 import { getSortedPostsData } from "../helpers/posts";
 
-const Home = ({ allProjectsData, allPostsData }) => {
+const Home = ({ allPostsData }) => {
   return (
     <>
       <HeroSection />
-      <ProjectsSection data={allProjectsData} />
+      <FeaturesSection />
+      <ProjectsSection />
       <RecentPostSection allPostsData={allPostsData} />
     </>
   );
@@ -39,8 +40,8 @@ const HeroSection = () => {
         <Image
           width={160}
           height={160}
-          className="glow"
           src="/avatar.png"
+          className="glow"
           alt=""
         />
       </Box>
@@ -62,21 +63,13 @@ const HeroSection = () => {
   );
 };
 
-const ProjectsSection = ({ data }) => {
+const ProjectsSection = () => {
   const router = useRouter();
   const { colorMode } = useColorMode();
 
-  useEffect(() => {
-    data
-      .filter((project) => project.highlight && project)
-      .map(({ id }) => {
-        router.prefetch("/projects/[id]", `/projects/${id}`);
-      });
-  });
-
   return (
     <>
-      <Box as="section" paddingY={22}>
+      <Box as="section" paddingY={22} marginY={16}>
         <Box>
           <Box>
             <Heading as="h1" size="2xl">
@@ -156,7 +149,6 @@ const ProjectsSection = ({ data }) => {
           </Link>
         </Box>
       </Box>
-      <Divider />
     </>
   );
 };
@@ -167,7 +159,7 @@ const RecentPostSection = ({ allPostsData }) => {
 
 
   return (
-    <Box as="section" marginY={5}>
+    <Box as="section" marginY={24}>
       <Heading size="2xl" marginBottom={2}>
         News and Information
       </Heading>
