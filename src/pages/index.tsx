@@ -17,7 +17,6 @@ const Home = ({ allPostsData }) => {
   return (
     <>
       <HeroSection />
-      <FeaturesSection />
       <ProjectsSection />
       <RecentPostSection allPostsData={allPostsData} />
     </>
@@ -41,7 +40,6 @@ const HeroSection = () => {
           width={160}
           height={160}
           src="/avatar.png"
-          className="glow"
           alt=""
         />
       </Box>

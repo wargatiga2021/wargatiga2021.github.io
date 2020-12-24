@@ -1,5 +1,4 @@
-import { Box, Flex, Heading, Text, Icon, HStack } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Flex, Heading, Text, Icon, HStack, Image } from "@chakra-ui/react";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { FaUserEdit, FaRegCalendarAlt, FaRegUserCircle, FaRegUser } from "react-icons/fa";
@@ -31,7 +30,7 @@ const BlogPost = ({ postData }: BlogPostProps) => {
         </Box>
         <Flex flexBasis={["20%"]}>
           <Box marginLeft="auto" width="60%">
-            <Image src={postData.thumbnail} unsized />
+            <Image src={postData.thumbnail} />
           </Box>
         </Flex>
       </Flex>
