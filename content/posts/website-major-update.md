@@ -1,6 +1,6 @@
 ---
 title: Website Major Update
-author: "Farell Faiz Firmansyah, Agus Nathanael"
+author: "Farell Faiz Firmansyah"
 date: "2020-12-18"
 slug: "website-major-update"
 thumbnail: "/thumbnails/address-book.png"
@@ -9,7 +9,7 @@ tags: website, intermezzo
 ---
 ## Pengembangan
 
-Setelah kurang lebih 2 bulan masa pengembangan situs web untuk Warga Tiga 2021 dengan source code dari [sznm.dev](https://github.com/sozonome/sznm.dev "sznm.dev"), akhirnya pada tanggal 17 Desember 2020, persentase pengembangan website telah mencapai hampir 100%, terutama untuk keseluruhan layout dan sistem yang berjalan di website ini.
+Setelah kurang lebih 2 bulan masa pengembangan situs web untuk Warga Tiga 2021 akhirnya pada tanggal 17 Desember 2020, persentase pengembangan website telah mencapai hampir 100%, terutama untuk keseluruhan layout dan sistem yang berjalan di website ini.
 
 ![Gambar perencanaan pengembangan website menggunakan buku tulis.](https://2021.wargati.ga/images/website-major-update/buku.jpg)
 
