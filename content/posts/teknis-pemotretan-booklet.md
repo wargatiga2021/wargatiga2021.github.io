@@ -23,13 +23,13 @@ Sebagai kewajiban kita semua baik dari pihak Nawa, sekolah, panitia, maupun pese
 ## Teknis Pemotretan
 Di segmen ini terbagi 2 informasi: informasi tempat dan proses pemotretan.
 
-### Informasi Tempat
+#### Informasi Tempat
 1. Ruangan pemotretan yang dipakai adalah **aula baru**.
 2. Terdapat **2 studio foto portable** dan **2 fotografer** di aula baru untuk **2 kelas**. 
     (Masing-masing kelas memiliki 1 studio dan 1 fotografer)
 3. Setiap kelas memiliki ruang tunggunya masing-masing.
 
-### Proses Pemotretan
+#### Proses Pemotretan
 1. Peserta datang ke sekolah **memakai PSAS** untuk melakukan **foto kelas** terlebih dahulu, tempat menyesuaikan.
 2. Setelah selesai foto kelas, harap **menuju ke ruang tunggu** masing-masing dan **mengganti pakaian sesuai tema kelas**.
 3. Peserta per kelas **datang bertahap** ke aula baru **sesuai urutan kelompok**.
