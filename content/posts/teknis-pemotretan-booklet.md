@@ -30,7 +30,7 @@ Di segmen ini terbagi 2 informasi: informasi tempat dan proses pemotretan.
 3. Setiap kelas memiliki **ruang tunggu**-nya masing-masing.
 
 #### Proses Pemotretan
-1. Peserta datang ke sekolah **memakai PSAS** untuk melakukan **foto kelas** terlebih dahulu, tempat menyesuaikan.
+1. Peserta datang ke ruang tunggunya di sekolah **memakai PSAS** untuk melakukan **foto kelas** terlebih dahulu.
 2. Setelah selesai foto kelas, harap **menuju ke ruang tunggu** masing-masing dan **mengganti pakaian sesuai tema kelas**.
 3. Peserta per kelas **datang bertahap** ke aula baru **sesuai urutan kelompok**.
 4. Peserta yang **sudah selesai** melakukan sesi foto langsung **kembali ke ruang tunggunya** masing-masing.
