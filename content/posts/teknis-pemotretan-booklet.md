@@ -27,7 +27,7 @@ Di segmen ini terbagi 2 informasi: informasi tempat dan proses pemotretan.
 1. Ruangan pemotretan yang dipakai adalah **aula baru**.
 2. Terdapat **2 studio foto portable** dan **2 fotografer** di aula baru untuk **2 kelas**. 
     (Masing-masing kelas memiliki 1 studio dan 1 fotografer)
-3. Setiap kelas memiliki ruang tunggunya masing-masing.
+3. Setiap kelas memiliki **ruang tunggu**-nya masing-masing.
 
 #### Proses Pemotretan
 1. Peserta datang ke sekolah **memakai PSAS** untuk melakukan **foto kelas** terlebih dahulu, tempat menyesuaikan.
