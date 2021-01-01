@@ -3,12 +3,14 @@ title: Protokol Kesehatan dan Teknis Pemotretan Booklet
 author: "Panitia Booklet"
 date: "2021-01-01"
 slug: "prokes-teknis-pemotretan-booklet"
-thumbnail: "/app_icons/desbook-pwa.png"
+thumbnail: "/thumbnails/studio.png"
 published: true
 tags: booklet
 ---
 Halo, Warga Tiga 2021! 👋
+
 Sebelumnya, selamat tahun baru ya! Semoga tahun ini menjadi tahun yang lebih baik daripada sebelumnya, semua impian kita terwujud, dan segala hal baik datang di 2021.
+
 Sesi pemotretan buku tahunan SMAN 3 Bandung sebentar lagi akan dilaksanakan. Jangan lupa untuk mempersiapkan diri! Mulai dari outfit yang akan kalian pakai, protokol kesehatan, dan hal-hal lainnya. Di postingan ini akan membahas beberapa hal yang harus kita perhatikan saat melakukan sesi pemotretan nanti.
 
 # Protokol Kesehatan
