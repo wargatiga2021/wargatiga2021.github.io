@@ -7,6 +7,8 @@ thumbnail: "/thumbnails/address-book.png"
 published: true
 tags: website, intermezzo
 ---
+[TOCM]
+
 ## Pengembangan
 
 Setelah kurang lebih 2 bulan masa pengembangan situs web untuk Warga Tiga 2021 akhirnya pada tanggal 17 Desember 2020, persentase pengembangan website telah mencapai hampir 100%, terutama untuk keseluruhan layout dan sistem yang berjalan di website ini.
