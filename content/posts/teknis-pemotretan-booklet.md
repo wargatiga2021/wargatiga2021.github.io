@@ -2,7 +2,7 @@
 title: Protokol Kesehatan dan Teknis Pemotretan Booklet
 author: "Panitia Booklet"
 date: "2021-01-01"
-slug: "prokes-teknis-pemotretan-booklet"
+slug: "teknis-pemotretan-booklet"
 thumbnail: "/thumbnails/studio.png"
 published: true
 tags: booklet
@@ -13,14 +13,14 @@ Sebelumnya, selamat tahun baru ya! Semoga tahun ini menjadi tahun yang lebih bai
 
 Sesi pemotretan buku tahunan SMAN 3 Bandung sebentar lagi akan dilaksanakan. Jangan lupa untuk mempersiapkan diri! Mulai dari outfit yang akan kalian pakai, protokol kesehatan, dan hal-hal lainnya. Di postingan ini akan membahas beberapa hal yang harus kita perhatikan saat melakukan sesi pemotretan nanti.
 
-# Protokol Kesehatan
+## Protokol Kesehatan
 Sebagai kewajiban kita semua baik dari pihak Nawa, sekolah, panitia, maupun peserta, **kita semua diwajibkan untuk mematuhi protokol kesehatan**. Berikut protokol kesehatan yang wajib kita patuhi:
 1. Memakai **masker** dan/atau face shield ketika tidak sedang difoto.
 2. Sebelum masuk area sekolah, dilakukan **pengecekan suhu**.
 3. Memakai **hand sanitizer** (meskipun di sekolah tersedia, dianjurkan untuk membawa masing-masing).
 4. Menerapkan **social distancing**.
 
-# Teknis Pemotretan
+## Teknis Pemotretan
 Berikut teknis pemotretan di sekolah:
 1. Ruangan pemotretan yang dipakai adalah **aula baru**.
 2. Terdapat **2 studio foto portable** dan **fotografer** di aula baru, **masing-masing untuk 1 kelas**.
