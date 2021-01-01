@@ -116,7 +116,7 @@ const Booklet = () => {
                   <AccordionItem>
                     <AccordionButton borderLeft="2px">
                       <Heading flex="1" textAlign="left" size="md">
-                        ‣ November - Desember
+                        • November - Desember
                       </Heading>
                       <AccordionIcon />
                     </AccordionButton>
@@ -131,9 +131,9 @@ const Booklet = () => {
                   </AccordionItem>
 
                   <AccordionItem>
-                    <AccordionButton borderLeft="2px" borderColor="#CDCDCD">
+                    <AccordionButton borderLeft="2px">
                       <Heading flex="1" textAlign="left" size="md">
-                        • Januari
+                        ‣ Januari
                       </Heading>
                       <AccordionIcon />
                     </AccordionButton>
@@ -213,9 +213,9 @@ const Booklet = () => {
                   </StatHelpText>
                 </Stat>
                 
-                <Stat borderTop="2px" borderColor="#CDCDCD" paddingTop="2">
+                <Stat borderTop="2px" borderColor={terminGreen} paddingTop="2">
                   <StatLabel>
-                    <CircleIcon color="#CDCDCD"/> Termin 2
+                    <CheckCircleIcon color={terminGreen}/> Termin 2
                   </StatLabel>
                   <StatNumber>Rp100.000,00</StatNumber>
                   <StatHelpText>
@@ -227,7 +227,7 @@ const Booklet = () => {
                   <StatLabel>
                     <CircleIcon color="#CDCDCD"/> Termin 3
                   </StatLabel>
-                  <StatNumber>Rp110.000,00</StatNumber>
+                  <StatNumber>Rp100.000,00</StatNumber>
                   <StatHelpText>
                     Januari
                   </StatHelpText>
