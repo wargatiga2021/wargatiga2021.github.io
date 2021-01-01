@@ -16,8 +16,9 @@ Sesi pemotretan buku tahunan SMAN 3 Bandung sebentar lagi akan dilaksanakan. Jan
 ## Protokol Kesehatan
 Sebagai kewajiban kita semua baik dari pihak Nawa, sekolah, panitia, maupun peserta, **kita semua diwajibkan untuk mematuhi protokol kesehatan**. Berikut protokol kesehatan yang wajib kita patuhi:
 1. Memakai **masker** dan/atau face shield ketika sedang tidak difoto.
+2. Peserta dihimbau untuk mencuci tangannya sebelum masuk ke area sekolah.
 2. Sebelum masuk area sekolah, dilakukan **pengecekan suhu**.
-3. Memakai **hand sanitizer** (meskipun di sekolah tersedia, dianjurkan untuk membawa masing-masing).
+3. Rutin memakai **hand sanitizer** (meskipun di sekolah tersedia, dianjurkan untuk membawa masing-masing).
 4. Menerapkan **social distancing**.
 
 ## Teknis Pemotretan
