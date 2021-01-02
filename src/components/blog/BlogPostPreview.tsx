@@ -1,8 +1,8 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Heading, Text, Flex, useColorModeValue, useColorMode, Icon, Image } from "@chakra-ui/react";
 
 import MotionBox from "../motion/MotionBox";
 import AccessibleLink from "../AccessibleLink";
+import { FaChevronCircleRight, FaRegCalendarAlt, FaRegUser } from "react-icons/fa";
 
 import { dateFormatLong } from "../../helpers/dateFormat";
 
@@ -13,6 +13,8 @@ type BlogPostPreviewProps = {
 };
 
 const BlogPostPreview = ({ postData }: BlogPostPreviewProps) => {
+  const { colorMode } = useColorMode();
+
   return (
     <MotionBox
       width="100%"
@@ -39,17 +41,29 @@ const BlogPostPreview = ({ postData }: BlogPostPreviewProps) => {
       }}
     >
       <AccessibleLink href={`/blog/${postData.id}`}>
-        <Flex flexWrap={"wrap"} alignItems="center" width="100%">
-          <Flex justifyContent="center" alignItems="center" flexBasis={["10%"]}>
-            <Box boxSize="60%">
-              <Image src={postData.thumbnail} alt={postData.title} unsized />
+        <MotionBox 
+          rounded="md" 
+          shadow="md" 
+          padding={{base: "10px", sm: "12px"}}
+          backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
+        >
+          <Flex flexWrap={"wrap"} alignItems="center" width="100%">
+            <Flex justifyContent="center" alignItems="center" flexBasis={["10%"]}>
+              <Box boxSize="60%">
+                <Image src={postData.thumbnail} alt={postData.title} />
+              </Box>
+            </Flex>
+            <Box flexBasis={["80%"]} paddingLeft={[11, 22]}>
+              <Heading size="lg">{postData.title}</Heading>
+              <Text size="sm">
+                {dateFormatLong(postData.date)}
+              </Text>
             </Box>
+            <Flex align="center" flexBasis={["10%"]} justifyContent="flex-end" paddingRight={{base: "10px", sm: "25px"}}>
+              <FaChevronCircleRight />
+            </Flex>
           </Flex>
-          <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
-            <Heading>{postData.title}</Heading>
-            <Text>{dateFormatLong(postData.date)}</Text>
-          </Box>
-        </Flex>
+        </MotionBox>
       </AccessibleLink>
     </MotionBox>
   );

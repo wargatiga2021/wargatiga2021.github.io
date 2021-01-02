@@ -1,22 +1,23 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Box, Heading, Text, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, useColorMode, useColorModeValue, Grid, GridItem } from "@chakra-ui/react";
 import Image from "next/image";
 
 import Card from "../components/Card";
 import MotionFlex from "../components/motion/MotionFlex";
 import MotionBox from "../components/motion/MotionBox";
 import BlogPostPreview from "../components/blog/BlogPostPreview";
+import FeaturesSection from "../components/layout/Features";
 
 import { getSortedProjectsData } from "../helpers/projects";
 import { getSortedPostsData } from "../helpers/posts";
 
-const Home = ({ allProjectsData, allPostsData }) => {
+const Home = ({ allPostsData }) => {
   return (
     <>
       <HeroSection />
-      <ProjectsSection data={allProjectsData} />
+      <ProjectsSection />
       <RecentPostSection allPostsData={allPostsData} />
     </>
   );
@@ -38,7 +39,6 @@ const HeroSection = () => {
         <Image
           width={160}
           height={160}
-          className="glow"
           src="/avatar.png"
           alt=""
         />
@@ -61,99 +61,93 @@ const HeroSection = () => {
   );
 };
 
-const ProjectsSection = ({ data }) => {
+const ProjectsSection = () => {
   const router = useRouter();
   const { colorMode } = useColorMode();
 
-  useEffect(() => {
-    data
-      .filter((project) => project.highlight && project)
-      .map(({ id }) => {
-        router.prefetch("/projects/[id]", `/projects/${id}`);
-      });
-  });
-
   return (
-    <Box as="section" paddingY={22}>
-      <Box>
+    <>
+      <Box as="section" paddingY={22} marginY={16}>
         <Box>
-          <Heading as="h1" size="2xl">
-            Projects and Events
-          </Heading>
-          <Text>
-            Agenda, kegiatan, dan project yang telah/sedang/akan kita laksanakan. 
-            Tap/klik untuk melihat detailnya.
-          </Text>
-        </Box>
-        <MotionFlex
-          wrap="wrap"
-          marginTop={22}
-          variants={{
-            before: {},
-            after: { transition: { staggerChildren: 0.06 } },
-          }}
-          initial="before"
-          animate="after"
-        >
-
-          {/* {data
-            .filter((project) => project.highlight && project)
-            .map(({ id, title, thumbnail }, index) => {
-              return (
-                <Card
-                  title={title}
-                  handleClick={() =>
-                    router.push("/projects/[id]", `/projects/${id}`)
-                  }
-                  img={thumbnail}
-                  key={index}
-                />
-              );
-            })} */}
-
-          <Card
-            title = "Booklet"
-            img = "/app_icons/desbook-pwa.png"
-            handleClick = {() =>
-              router.push("/booklet")
-            }
-          />
-          <Card
-            title = "Turbud"
-            img = "/app_icons/beach.png"
-            handleClick = {() =>
-              router.push("/turbud")
-            }
-          />
-          <Card
-            title = "Research Based Learning"
-            img = "/app_icons/rbl.png"
-            handleClick = {() =>
-              router.push("/rbl")
-            }
-          />
-          <Card
-            title = "Gayapatri"
-            img = "/app_icons/gayapatri.png"
-          />
-
-        </MotionFlex>
-        <Link href="/projects">
-          <Button
-            width="100%"
-            borderRadius={20}
-            height={55}
-            backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
-            _hover={{
-              backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
-              color: "black",
+          <Box>
+            <Heading as="h1" size="2xl">
+              Projects and Events
+            </Heading>
+            <Text>
+              Agenda, kegiatan, dan project yang telah/sedang/akan kita laksanakan. 
+              Tap/klik untuk melihat detailnya.
+            </Text>
+          </Box>
+          <MotionFlex
+            wrap="wrap"
+            marginTop={22}
+            variants={{
+              before: {},
+              after: { transition: { staggerChildren: 0.06 } },
             }}
+            initial="before"
+            animate="after"
           >
-            lihat selengkapnya
-          </Button>
-        </Link>
+
+            {/* {data
+              .filter((project) => project.highlight && project)
+              .map(({ id, title, thumbnail }, index) => {
+                return (
+                  <Card
+                    title={title}
+                    handleClick={() =>
+                      router.push("/projects/[id]", `/projects/${id}`)
+                    }
+                    img={thumbnail}
+                    key={index}
+                  />
+                );
+              })} */}
+
+            <Card
+              title = "Booklet"
+              img = "/app_icons/desbook-pwa.png"
+              handleClick = {() =>
+                router.push("/booklet")
+              }
+            />
+            <Card
+              title = "Turbud"
+              img = "/app_icons/beach.png"
+              handleClick = {() =>
+                router.push("/turbud")
+              }
+            />
+            <Card
+              title = "Research Based Learning"
+              img = "/app_icons/rbl.png"
+              handleClick = {() =>
+                router.push("/rbl")
+              }
+            />
+            <Card
+              title = "Gayapatri"
+              img = "/app_icons/gayapatri.png"
+            />
+
+          </MotionFlex>
+          <Link href="/projects">
+            <Button
+              width="100%"
+              borderRadius={20}
+              height={55}
+              backgroundColor={colorMode === "light" ? "gray.100" : "teal.700"}
+              _hover={{
+                backgroundColor: colorMode === "light" ? "gray.300" : "teal.300",
+                color: "black",
+              }}
+            >
+              lihat selengkapnya
+            </Button>
+          </Link>
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 

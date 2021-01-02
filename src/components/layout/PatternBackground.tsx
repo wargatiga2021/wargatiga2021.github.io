@@ -6,13 +6,13 @@ const PatternBackground = () => {
   return (
     <>
       <Image
-        src={colorMode === "light" ? "/bg-light.svg" : "/bg.svg"}
+        src={colorMode === "light" ? "/bg-light.png" : "/bg.png"}
         position="fixed"
         right={["-200px", "-200px", "-200px", "0"]}
         alt=""
       />
       <Image
-        src={colorMode === "light" ? "/bg-light.svg" : "/bg.svg"}
+        src={colorMode === "light" ? "/bg-light.png" : "/bg.png"}
         position="fixed"
         left={["-200px", "-200px", "-200px", "0"]}
         bottom="0"

@@ -12,8 +12,8 @@ const Meta = () => {
       <link
         rel="alternate"
         type="application/rss+xml"
-        title="RSS feed for sozonome's blog posts"
-        href="https://sznm.dev/rss.xml"
+        title="RSS feed for Warga Tiga 21's blog posts"
+        href="https://2021.wargati.ga/rss.xml"
       />
     </Head>
   );

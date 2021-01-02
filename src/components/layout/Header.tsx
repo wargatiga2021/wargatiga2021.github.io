@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Box, Flex, Text, Image, HStack, Center, Heading, Badge, useColorModeValue, useColorMode, IconButton, useDisclosure } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, HStack, Center, Heading, Badge, useColorModeValue, useColorMode, IconButton, useDisclosure, Spacer } from "@chakra-ui/react";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 import Map from "./Map";
@@ -8,19 +8,22 @@ import { responsiveWidthProps } from "../../styles/customTheme";
 
 const Header = () => {
   return (
-    <Flex as="header" {...responsiveWidthProps} align="center">
+    <HStack as="header" {...responsiveWidthProps} align="center" spacing="0px">
       <Logo />
       <Link href="/" passHref>
-        <Heading as="a" cursor="pointer" fontSize="4xl" fontFamily="Markazi Text, sans-serif">
+        <Heading mr={2} cursor="pointer" fontSize={{base: "30px", sm: "36px"}} fontFamily="Markazi Text, sans-serif">
           Warga Tiga
         </Heading>
       </Link>
-      <Badge ml="2" fontSize="1em" variant="subtle">2021</Badge>
-      <Box marginLeft="auto">
-        <Map />
-        <ThemeToggle />
+      <Badge fontSize="1em" variant="subtle">2021</Badge>
+      <Spacer />
+      <Box>
+        <HStack spacing="0px">
+          <Map />
+          <ThemeToggle />
+        </HStack>
       </Box>
-    </Flex>
+    </HStack>
   );
 };
 

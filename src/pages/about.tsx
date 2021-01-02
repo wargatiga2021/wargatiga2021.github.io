@@ -60,7 +60,7 @@ const AboutContent = () => {
           isExternal
         >
           <Text as="span" fontWeight={500}>
-            Github.
+            Github. {" "}
           </Text>
         </AccessibleLink>
       </Text>
