@@ -18,7 +18,7 @@ Sebagai kewajiban kita semua baik dari pihak Nawa, sekolah, panitia, maupun pese
 1.	Panitia akan menerapkan sistem 3M (siswa-siswi hanya akan melepas masker ketika di foto saja).
 2.	Panitia akan melakukan pengecekan suhu tubuh kepada setiap orang yang ada di lokasi/terlibat sesi foto ini.
 3.	Panitia akan mengatur waktu foto agar tidak ada yang berkerumum.
-4.	Proses foto kelompok maksimal hanya 4 orang dan akan berjarak.
+4.	1 kelompok (maks. 4 orang) melakukan pemotretan individu/tunggal bergantian di albar.
 5.	Panitia akan konsisten memastikan kegiatan foto berjalan secara kondusif.
 6.	Siswa-siswi yang tidak difoto harus menunggu di kelas yang telah disiapkan panitia.
 7.	Siswa-siswi diwajibkan untuk memakai masker sebelum dan sesudah difoto.
