@@ -15,11 +15,16 @@ Sesi pemotretan buku tahunan SMAN 3 Bandung sebentar lagi akan dilaksanakan. Jan
 
 ## Protokol Kesehatan
 Sebagai kewajiban kita semua baik dari pihak Nawa, sekolah, panitia, maupun peserta, **kita semua diwajibkan untuk mematuhi protokol kesehatan**. Berikut protokol kesehatan yang wajib kita patuhi:
-1. Memakai **masker** dan/atau face shield ketika sedang tidak difoto.
-2. Peserta dihimbau untuk **mencuci tangan**-nya sebelum masuk ke area sekolah.
-2. Sebelum masuk area sekolah, dilakukan **pengecekan suhu**.
-3. Rutin memakai **hand sanitizer** (meskipun di sekolah tersedia, dianjurkan untuk membawa masing-masing).
-4. Menerapkan **social distancing**.
+1.	Panitia akan menerapkan sistem 3M (siswa-siswi hanya akan melepas masker ketika di foto saja).
+2.	Panitia akan melakukan pengecekan suhu tubuh kepada setiap orang yang ada di lokasi/terlibat sesi foto ini.
+3.	Panitia akan mengatur waktu foto agar tidak ada yang berkerumum.
+4.	Proses foto kelompok maksimal hanya 4 orang dan akan berjarak.
+5.	Panitia akan konsisten memastikan kegiatan foto berjalan secara kondusif.
+6.	Siswa-siswi yang tidak difoto harus menunggu di kelas yang telah disiapkan panitia.
+7.	Siswa-siswi diwajibkan untuk memakai masker sebelum dan sesudah difoto.
+8.	Sekolah memfasilitasi faceshield yang akan digunakan siswa-siswi sebelum dan sesudah difoto.
+9.	Seluruh tempat, benda, dan properti akan terus dijaga agar tetap steril. 
+
 
 ## Teknis Pemotretan
 Di segmen ini terbagi 2 informasi: informasi tempat dan proses pemotretan.
