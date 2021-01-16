@@ -150,7 +150,7 @@ const Booklet = () => {
                                 <PopoverArrow />
                                 <PopoverCloseButton />
                                 <PopoverHeader>Jadwal dan Sesi Foto</PopoverHeader>
-                                <PopoverBody>Klik tombok JADWAL FOTO di atas untuk mengetahui.</PopoverBody>
+                                <PopoverBody>Untuk jadwal foto silakan lihat informasi di grup angkatan atau di grup kelas masing-masing.</PopoverBody>
                               </PopoverContent>
                             </Popover>
                           </Center>
